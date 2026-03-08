@@ -1,0 +1,81 @@
+import Image from "next/image";
+import Link from "next/link";
+import CountdownTimer from "./CountdownTimer";
+import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+
+const CONFERENCE_DATE = new Date("2026-09-26T09:00:00+05:30");
+
+export default function HeroSection() {
+  return (
+    <section className="relative overflow-hidden text-white">
+      {/* Background image */}
+      <Image
+        src="/image.png"
+        alt="AIEI 2026 Conference"
+        fill
+        priority
+        className="object-cover"
+      />
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-primary-dark/75" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+        <div className="text-center">
+          {/* IEEE Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-sm mb-6">
+            <span className="font-semibold text-accent">IEEE</span>
+            <span className="text-white/70">Conference</span>
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+            International Conference on
+            <br />
+            <span className="text-accent">AI Engineering and Innovation</span>
+          </h1>
+
+          <p className="mt-4 text-lg sm:text-xl text-white/80 font-medium">
+            AIEI 2026
+          </p>
+
+          {/* Date & Venue */}
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm sm:text-base text-white/80">
+            <div className="flex items-center gap-2">
+              <FaCalendarAlt className="text-accent" />
+              <span>September 26–28, 2026</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <FaMapMarkerAlt className="text-accent" />
+              <span>Arka Jain University, Jharkhand, India</span>
+            </div>
+          </div>
+
+          {/* Countdown */}
+          <div className="mt-10">
+            <p className="text-sm text-white/60 uppercase tracking-widest mb-4">
+              Conference Starts In
+            </p>
+            <div className="flex justify-center">
+              <CountdownTimer targetDate={CONFERENCE_DATE} />
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <Link
+              href="/register"
+              className="px-8 py-3 rounded-lg bg-accent text-primary-dark font-bold text-sm sm:text-base hover:bg-accent-light transition-colors shadow-lg shadow-accent/25"
+            >
+              Register Now
+            </Link>
+            <Link
+              href="/call-for-papers"
+              className="px-8 py-3 rounded-lg border border-white/30 text-white font-semibold text-sm sm:text-base hover:bg-white/10 transition-colors"
+            >
+              Submit Paper
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
