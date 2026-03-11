@@ -3,45 +3,45 @@ import { FaCircle, FaCalendarAlt } from "react-icons/fa";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Key Dates | AIEI 2026",
-  description: "Important dates and deadlines for AIEI 2026 — paper submission, acceptance notification, registration, and conference dates.",
+  title: "Key Dates | JHICON-2027",
+  description: "Important dates and deadlines for JHICON-2027 — paper submission, acceptance notification, registration, and conference dates.",
 };
 
 const timeline = [
   {
-    date: "June 15, 2026",
+    date: "October 15, 2026",
     title: "Paper Submission Deadline",
     description: "Submit your full paper via the online submission system.",
     status: "upcoming" as const,
   },
   {
-    date: "July 20, 2026",
+    date: "November 20, 2026",
     title: "Acceptance Notification",
     description: "Authors will be notified of the review decision.",
     status: "upcoming" as const,
   },
   {
-    date: "August 10, 2026",
+    date: "December 10, 2026",
     title: "Camera-Ready Submission",
     description: "Submit the final version of your accepted paper with all revisions.",
     status: "upcoming" as const,
   },
   {
-    date: "August 15, 2026",
+    date: "December 15, 2026",
     title: "Submission of Final Manuscript & Copyright",
     description: "Submit final manuscript along with IEEE copyright form.",
     status: "upcoming" as const,
   },
   {
-    date: "August 25, 2026",
+    date: "January 10, 2027",
     title: "Registration Deadline",
     description: "At least one author per accepted paper must register.",
     status: "upcoming" as const,
   },
   {
-    date: "September 26–28, 2026",
+    date: "February 2–3, 2027",
     title: "Conference Dates",
-    description: "Three days of keynotes, paper presentations, tutorials, and networking.",
+    description: "Two days of keynotes, paper presentations, tutorials, and networking.",
     status: "upcoming" as const,
   },
 ];
@@ -53,7 +53,7 @@ export default function KeyDatesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold">Key Dates</h1>
           <p className="mt-3 text-white/80 text-lg">
-            Important deadlines and milestones for AIEI 2026
+            Important deadlines and milestones for JHICON-2027
           </p>
         </div>
       </section>
@@ -109,10 +109,10 @@ export default function KeyDatesPage() {
               Dates are subject to change. Please check this page regularly for any updates.
               For any queries regarding deadlines, please contact us at{" "}
               <a
-                href="mailto:aiei2026@arkajainuniversity.ac.in"
+                href="mailto:jhicon2027@arkajainuniversity.ac.in"
                 className="text-primary font-medium hover:text-accent transition-colors"
               >
-                aiei2026@arkajainuniversity.ac.in
+                jhicon2027@arkajainuniversity.ac.in
               </a>
               .
             </p>

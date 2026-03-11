@@ -1,11 +1,11 @@
 import { FaCalendarCheck } from "react-icons/fa";
 
 const keyDates = [
-  { label: "Paper Submission Deadline", date: "June 15, 2026", highlight: true },
-  { label: "Acceptance Notification", date: "July 20, 2026" },
-  { label: "Camera-Ready Submission", date: "August 10, 2026" },
-  { label: "Registration Deadline", date: "August 25, 2026" },
-  { label: "Conference Dates", date: "September 26–28, 2026", highlight: true },
+  { label: "Paper Submission Deadline", date: "October 15, 2026", highlight: true },
+  { label: "Acceptance Notification", date: "November 20, 2026" },
+  { label: "Camera-Ready Submission", date: "December 10, 2026" },
+  { label: "Registration Deadline", date: "January 10, 2027" },
+  { label: "Conference Dates", date: "February 2–3, 2027", highlight: true },
 ];
 
 export default function KeyDatesCard() {

@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AIEI 2026 | International Conference on AI Engineering and Innovation",
+  title: "JHICON-2027 | Jharkhand International Conference on Electrical Engineering, Signal Processing & Advance Computing",
   description:
-    "AIEI 2026 — International Conference on AI Engineering and Innovation, organized by Arka Jain University in collaboration with IEEE. September 26–28, 2026.",
+    "JHICON-2027 — 1st Jharkhand International Conference on Electrical Engineering, Signal Processing and Advance Computing Technologies for Sustainable Development. February 2–3, 2027 at Arka Jain University.",
 };
 
 export default function RootLayout({

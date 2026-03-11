@@ -26,7 +26,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <span className="text-xl font-bold text-white tracking-wide">
-              AIEI <span className="text-accent">2026</span>
+              JHICON <span className="text-accent">2027</span>
             </span>
           </Link>
 

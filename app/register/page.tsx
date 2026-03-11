@@ -3,8 +3,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Register | AIEI 2026",
-  description: "Register for the International Conference on AI Engineering and Innovation (AIEI 2026).",
+  title: "Register | JHICON-2027",
+  description: "Register for the 1st Jharkhand International Conference on Electrical Engineering, Signal Processing and Advance Computing Technologies for Sustainable Development (JHICON-2027).",
 };
 
 // TODO: Replace with actual Google Form URL before going live
@@ -18,7 +18,7 @@ export default function RegisterPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold">Registration</h1>
           <p className="mt-3 text-white/80 text-lg">
-            Register for AIEI 2026
+            Register for JHICON-2027
           </p>
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function RegisterPage() {
               Registration Portal
             </h2>
             <p className="text-gray-600 mb-8 max-w-lg mx-auto leading-relaxed">
-              Registration for AIEI 2026 will be handled through Google Forms.
+              Registration for JHICON-2027 will be handled through Google Forms.
               Click the button below to proceed to the registration form.
               At least one author per accepted paper must register for the conference.
             </p>

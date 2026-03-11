@@ -1,6 +1,6 @@
-# AIEI 2026 — International Conference on AI Engineering and Innovation
+# JHICON-2027 — Jharkhand International Conference on Electrical Engineering, Signal Processing & Advance Computing
 
-Conference website for **AIEI 2026**, organized by **Arka Jain University** in collaboration with **IEEE**.
+Conference website for **JHICON-2027**, organized by **Arka Jain University** in collaboration with **IEEE**.
 
 ## Tech Stack
 

@@ -2,8 +2,8 @@ import SectionHeading from "../components/SectionHeading";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Committee | AIEI 2026",
-  description: "Organizing committee, advisory board, and technical program committee for AIEI 2026.",
+  title: "Committee | JHICON-2027",
+  description: "Organizing committee, advisory board, and technical program committee for JHICON-2027.",
 };
 
 interface CommitteeMember {

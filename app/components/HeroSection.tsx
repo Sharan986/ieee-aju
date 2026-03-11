@@ -3,7 +3,7 @@ import Link from "next/link";
 import CountdownTimer from "./CountdownTimer";
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
-const CONFERENCE_DATE = new Date("2026-09-26T09:00:00+05:30");
+const CONFERENCE_DATE = new Date("2027-02-02T09:00:00+05:30");
 
 export default function HeroSection() {
   return (
@@ -11,7 +11,7 @@ export default function HeroSection() {
       {/* Background image */}
       <Image
         src="/image.png"
-        alt="AIEI 2026 Conference"
+        alt="JHICON-2027 Conference"
         fill
         priority
         className="object-cover"
@@ -23,25 +23,25 @@ export default function HeroSection() {
         <div className="text-center">
           {/* IEEE Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-sm mb-6">
-            <span className="font-semibold text-accent">IEEE</span>
-            <span className="text-white/70">Conference</span>
+            <span className="font-semibold text-accent">JHICON </span>
+            <span className="text-white/70">2027</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-            International Conference on
+            Jharkhand International Conference on
             <br />
-            <span className="text-accent">AI Engineering and Innovation</span>
+            <span className="text-accent">Electrical Engineering, Signal Processing &amp; Advance Computing</span>
           </h1>
 
-          <p className="mt-4 text-lg sm:text-xl text-white/80 font-medium">
-            AIEI 2026
-          </p>
+          {/* <p className="mt-4 text-lg sm:text-xl text-white/80 font-medium">
+            JHICON-2027
+          </p> */}
 
           {/* Date & Venue */}
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm sm:text-base text-white/80">
             <div className="flex items-center gap-2">
               <FaCalendarAlt className="text-accent" />
-              <span>September 26–28, 2026</span>
+              <span>February 2–3, 2027</span>
             </div>
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-accent" />

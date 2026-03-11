@@ -29,8 +29,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FaEnvelope className="shrink-0 text-accent" />
-                <a href="mailto:aiei2026@arkajainuniversity.ac.in" className="hover:text-accent transition-colors">
-                  aiei2026@arkajainuniversity.ac.in
+                <a href="mailto:jhicon2027@arkajainuniversity.ac.in" className="hover:text-accent transition-colors">
+                  jhicon2027@arkajainuniversity.ac.in
                 </a>
               </li>
             </ul>
@@ -55,9 +55,10 @@ export default function Footer() {
 
           {/* About / Branding */}
           <div>
-            <h3 className="text-lg font-bold text-accent mb-4">AIEI 2026</h3>
+            <h3 className="text-lg font-bold text-accent mb-4">JHICON-2027</h3>
             <p className="text-sm text-white/80 leading-relaxed mb-4">
-              International Conference on AI Engineering and Innovation, organized
+              1st Jharkhand International Conference on Electrical Engineering, Signal Processing
+              and Advance Computing Technologies for Sustainable Development, organized
               by Arka Jain University in collaboration with IEEE.
             </p>
             <div className="flex items-center gap-4">
@@ -76,7 +77,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
           <p className="text-center text-xs text-white/60">
-            © 2026 AIEI Conference. All rights reserved. | International Conference on AI Engineering and Innovation
+            © 2027 JHICON Conference. All rights reserved. | Jharkhand International Conference on Electrical Engineering, Signal Processing & Advance Computing
           </p>
         </div>
       </div>

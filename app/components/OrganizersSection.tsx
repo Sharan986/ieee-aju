@@ -27,7 +27,7 @@ export default function OrganizersSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Organizers"
-          subtitle="AIEI 2026 is jointly organized by the following institutions"
+          subtitle="JHICON-2027 is jointly organized by the following institutions"
         />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {organizers.map((org) => (
