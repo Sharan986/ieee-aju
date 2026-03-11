@@ -5,70 +5,75 @@ import { FaCheckCircle, FaFileAlt, FaPaperPlane } from "react-icons/fa";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Call for Papers | AIEI 2026",
-  description: "Submit your research paper to AIEI 2026. Conference tracks, submission guidelines, and paper format.",
+  title: "Call for Papers | JHICON-2027",
+  description: "Submit your research paper to JHICON-2027. Conference tracks, submission guidelines, and paper format.",
 };
 
 const tracks = [
   {
-    title: "AI & Machine Learning",
+    title: "Electrical Engineering & Power Systems",
     topics: [
-      "Deep Learning & Neural Networks",
-      "Reinforcement Learning",
+      "Power System Analysis & Protection",
+      "High Voltage Engineering",
+      "Electrical Machines & Drives",
+      "Power Electronics & Converters",
+      "Smart Grid Technologies",
+      "Energy Storage Systems",
+    ],
+  },
+  {
+    title: "Signal Processing & Communications",
+    topics: [
+      "Digital Signal Processing",
+      "Image & Video Processing",
+      "Speech & Audio Processing",
+      "Wireless Communication Systems",
+      "5G/6G Networks",
+      "Radar & Sonar Systems",
+    ],
+  },
+  {
+    title: "VLSI & Embedded Systems",
+    topics: [
+      "VLSI Design & Testing",
+      "System-on-Chip (SoC) Design",
+      "FPGA-based Systems",
+      "Embedded System Design",
+      "Low-Power Circuit Design",
+      "Hardware Security",
+    ],
+  },
+  {
+    title: "Advanced Computing & AI",
+    topics: [
+      "Machine Learning & Deep Learning",
+      "Cloud & Edge Computing",
+      "High Performance Computing",
       "Natural Language Processing",
       "Computer Vision",
-      "Generative AI & Large Language Models",
-      "Explainable AI (XAI)",
+      "Blockchain Technologies",
     ],
   },
   {
-    title: "AI in Healthcare",
+    title: "Renewable Energy & Sustainable Development",
     topics: [
-      "Medical Image Analysis",
-      "Drug Discovery using AI",
-      "AI-powered Diagnostics",
-      "Wearable Health Monitoring",
-      "Genomics & Bioinformatics",
+      "Solar & Wind Energy Systems",
+      "Micro-grid & Distributed Generation",
+      "Electric Vehicles & Charging Infrastructure",
+      "Energy Efficiency & Management",
+      "Green Computing",
+      "Sustainable IoT Solutions",
     ],
   },
   {
-    title: "Smart Systems & IoT",
+    title: "IoT, Robotics & Automation",
     topics: [
-      "Smart Cities & Infrastructure",
-      "Industrial IoT & Industry 4.0",
-      "Autonomous Vehicles",
-      "Robotics & Automation",
-      "Edge & Fog Computing",
-    ],
-  },
-  {
-    title: "AI in Energy & Agriculture",
-    topics: [
-      "Smart Grid & Renewable Energy",
-      "Precision Agriculture",
-      "AI for Climate Change",
-      "Sustainable Development using AI",
-      "Crop Disease Detection",
-    ],
-  },
-  {
-    title: "Cybersecurity & Privacy",
-    topics: [
-      "AI-powered Threat Detection",
-      "Federated Learning & Privacy",
-      "Blockchain & AI Integration",
-      "Network Security using AI",
-      "Adversarial Machine Learning",
-    ],
-  },
-  {
-    title: "Data Science & Analytics",
-    topics: [
-      "Big Data Analytics",
-      "Knowledge Graphs",
-      "Recommendation Systems",
-      "Time Series Analysis",
-      "Social Network Analysis",
+      "Internet of Things (IoT) Applications",
+      "Industrial Automation & Control",
+      "Robotics & Mechatronics",
+      "Sensor Networks",
+      "Cyber-Physical Systems",
+      "Smart Manufacturing",
     ],
   },
 ];
@@ -80,7 +85,7 @@ export default function CallForPapersPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold">Call for Papers</h1>
           <p className="mt-3 text-white/80 text-lg">
-            Submit your original research to AIEI 2026
+            Submit your original research to JHICON-2027
           </p>
         </div>
       </section>
@@ -93,8 +98,9 @@ export default function CallForPapersPage() {
               {/* Introduction */}
               <div className="mb-12">
                 <p className="text-gray-600 leading-relaxed">
-                  AIEI 2026 invites original, unpublished research papers on all aspects
-                  of AI Engineering and Innovation. Authors are encouraged to submit
+                  JHICON-2027 invites original, unpublished research papers on all aspects
+                  of Electrical Engineering, Signal Processing, and Advance Computing
+                  Technologies for Sustainable Development. Authors are encouraged to submit
                   high-quality papers describing original and previously unpublished results
                   of theoretical, empirical, or experimental work in the areas listed below
                   (but not limited to).

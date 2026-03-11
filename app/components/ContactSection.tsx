@@ -12,7 +12,7 @@ export default function ContactSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Contact Us"
-          subtitle="Have questions about AIEI 2026? Reach out to us"
+          subtitle="Have questions about JHICON-2027? Reach out to us"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -118,8 +118,8 @@ export default function ContactSection() {
                 <FaEnvelope className="text-primary mt-0.5 shrink-0" />
                 <div className="text-sm text-gray-600 min-w-0">
                   <p className="font-semibold text-foreground">Email</p>
-                  <a href="mailto:aiei2026@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all">
-                    aiei2026@arkajainuniversity.ac.in
+                  <a href="mailto:jhicon2027@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all">
+                    jhicon2027@arkajainuniversity.ac.in
                   </a>
                 </div>
               </div>

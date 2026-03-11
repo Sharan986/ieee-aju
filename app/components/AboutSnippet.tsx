@@ -7,17 +7,18 @@ export default function AboutSnippet() {
     <section className="py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="About AIEI 2026"
-          subtitle="Advancing AI Engineering for a Better Tomorrow"
+          title="About JHICON-2027"
+          subtitle="Advancing Sustainable Development through Technology"
         />
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-gray-600 leading-relaxed">
-            The International Conference on AI Engineering and Innovation (AIEI 2026) is
+            The 1st Jharkhand International Conference on Electrical Engineering, Signal Processing
+            and Advance Computing Technologies for Sustainable Development (JHICON-2027) is
             a premier global platform that brings together researchers, academicians,
             industry professionals, and innovators to present cutting-edge research in
-            artificial intelligence and its applications across diverse domains. Organized
-            by Arka Jain University in collaboration with IEEE, AIEI 2026 aims to foster
-            international collaboration and drive innovation in AI-driven systems.
+            electrical engineering, signal processing, and advanced computing. Organized
+            by Arka Jain University in collaboration with IEEE, JHICON-2027 aims to foster
+            international collaboration and drive innovation for sustainable development.
           </p>
           <Link
             href="/about"

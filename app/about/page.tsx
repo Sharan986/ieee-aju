@@ -3,8 +3,8 @@ import KeyDatesCard from "../components/KeyDatesCard";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | AIEI 2026",
-  description: "Learn about the International Conference on AI Engineering and Innovation (AIEI 2026) and Arka Jain University.",
+  title: "About | JHICON-2027",
+  description: "Learn about the 1st Jharkhand International Conference on Electrical Engineering, Signal Processing and Advance Computing Technologies for Sustainable Development (JHICON-2027) and Arka Jain University.",
 };
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
       <section className="bg-linear-to-r from-primary to-primary-dark py-16 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold">About</h1>
-          <p className="mt-3 text-white/80 text-lg">AIEI 2026 & Arka Jain University</p>
+          <p className="mt-3 text-white/80 text-lg">JHICON-2027 & Arka Jain University</p>
         </div>
       </section>
 
@@ -23,28 +23,31 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main content */}
             <div className="lg:col-span-2 space-y-12">
-              {/* About AIEI 2026 */}
+              {/* About JHICON-2027 */}
               <div>
-                <SectionHeading title="About AIEI 2026" />
+                <SectionHeading title="About JHICON-2027" />
                 <div className="prose prose-sm sm:prose-base max-w-none text-gray-600 space-y-4 leading-relaxed">
                   <p>
-                    The <strong>International Conference on AI Engineering and Innovation (AIEI 2026)</strong>{" "}
-                    is scheduled to be held on <strong>September 26–28, 2026</strong> at{" "}
+                    The <strong>1st Jharkhand International Conference on Electrical Engineering, Signal Processing
+                    and Advance Computing Technologies for Sustainable Development (JHICON-2027)</strong>{" "}
+                    is scheduled to be held on <strong>February 2–3, 2027</strong> at{" "}
                     <strong>Arka Jain University, Gamharia, Jharkhand, India</strong>. This
-                    inaugural edition of AIEI marks a significant step toward advancing Artificial
-                    Intelligence and Engineering Innovation for societal and industrial transformation.
+                    inaugural edition of JHICON marks a significant step toward advancing Electrical
+                    Engineering, Signal Processing, and Computing Technologies for sustainable societal
+                    and industrial transformation.
                   </p>
                   <p>
-                    AIEI 2026 has been envisioned as a dynamic global platform for researchers,
+                    JHICON-2027 has been envisioned as a dynamic global platform for researchers,
                     academicians, industry professionals, and innovators to present original
-                    contributions and explore the latest in AI-driven systems and applications,
-                    with a strong emphasis on international collaboration and innovation.
+                    contributions and explore the latest in electrical engineering, signal processing,
+                    and advanced computing, with a strong emphasis on international collaboration
+                    and sustainable development.
                   </p>
                   <p>
                     The conference features keynote sessions, technical paper presentations,
-                    tutorials, industry sessions, and panel discussions across various AI
-                    domains — including healthcare, agriculture, energy, business, education,
-                    defense, intelligent control, and smart systems.
+                    tutorials, industry sessions, and panel discussions across various
+                    domains — including power systems, signal processing, VLSI, IoT, renewable
+                    energy, advanced computing, and smart systems.
                   </p>
                   <p>
                     All registered and presented papers will be submitted to{" "}

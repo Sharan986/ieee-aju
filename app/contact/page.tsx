@@ -138,10 +138,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-foreground">Email</h3>
                     <a
-                      href="mailto:aiei2026@arkajainuniversity.ac.in"
+                      href="mailto:jhicon2027@arkajainuniversity.ac.in"
                       className="text-sm text-gray-600 hover:text-accent transition-colors mt-1 block"
                     >
-                      aiei2026@arkajainuniversity.ac.in
+                      jhicon2027@arkajainuniversity.ac.in
                     </a>
                   </div>
                 </div>

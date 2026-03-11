@@ -2,8 +2,8 @@ import SectionHeading from "../components/SectionHeading";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sponsors | AIEI 2026",
-  description: "Sponsors, technical co-sponsors, and knowledge partners of AIEI 2026.",
+  title: "Sponsors | JHICON-2027",
+  description: "Sponsors, technical co-sponsors, and knowledge partners of JHICON-2027.",
 };
 
 const tiers = [
@@ -57,11 +57,11 @@ export default function SponsorsPage() {
           <div className="bg-linear-to-r from-primary to-primary-dark rounded-2xl p-8 sm:p-12 text-center text-white">
             <h2 className="text-2xl sm:text-3xl font-bold mb-3">Become a Sponsor</h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-6">
-              Partner with AIEI 2026 and showcase your organization to a global audience
-              of researchers, engineers, and innovators in the field of AI.
+              Partner with JHICON-2027 and showcase your organization to a global audience
+              of researchers, engineers, and innovators in the field of electrical engineering and computing.
             </p>
             <a
-              href="mailto:aiei2026@arkajainuniversity.ac.in?subject=Sponsorship%20Inquiry%20-%20AIEI%202026"
+              href="mailto:jhicon2027@arkajainuniversity.ac.in?subject=Sponsorship%20Inquiry%20-%20JHICON-2027"
               className="inline-block px-8 py-3 rounded-lg bg-accent text-primary-dark font-bold text-sm hover:bg-accent-light transition-colors"
             >
               Contact Us for Sponsorship
