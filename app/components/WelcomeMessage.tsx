@@ -4,21 +4,21 @@ export default function WelcomeMessage() {
   return (
     <section className="py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading title="Welcome Message from the General Chair" />
+        <SectionHeading title="Welcome Message from the Organizing Leadership" />
 
         <div className="max-w-4xl mx-auto">
           {/* Chairs */}
           <div className="flex flex-wrap justify-center gap-8 mb-10">
             {[
               {
-                name: "Dr. A. K. Sharma",
-                title: "General Chair, JHICON-2027",
-                affiliation: "Arka Jain University, India",
+                name: "Prof. (Dr.) Easwaran S. Iyer",
+                title: "Chief Patron, JHICON-2027",
+                affiliation: "Vice-Chancellor, ARKA Jain University",
               },
               {
-                name: "Dr. R. P. Singh",
-                title: "General Co-Chair, JHICON-2027",
-                affiliation: "Arka Jain University, India",
+                name: "Dr. Aditya Prasad Padhy, SMIEEE",
+                title: "Organizing Chair, JHICON-2027",
+                affiliation: "IEEE-AJU Student Branch Chair",
               },
             ].map((chair) => (
               <div key={chair.name} className="text-center">

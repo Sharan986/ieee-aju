@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Committee | JHICON-2027",
-  description: "Organizing committee, advisory board, and technical program committee for JHICON-2027.",
+  description: "Organizing committee details for JHICON-2027 at ARKA Jain University.",
 };
 
 interface CommitteeMember {
@@ -12,36 +12,174 @@ interface CommitteeMember {
   role?: string;
 }
 
-const generalChairs: CommitteeMember[] = [
-  { name: "Dr. A. K. Sharma", affiliation: "Arka Jain University, India", role: "General Chair" },
-  { name: "Dr. R. P. Singh", affiliation: "Arka Jain University, India", role: "General Co-Chair" },
-];
-
 const organizingCommittee: CommitteeMember[] = [
-  { name: "Dr. S. Kumar", affiliation: "Arka Jain University, India", role: "Organizing Chair" },
-  { name: "Dr. P. Gupta", affiliation: "Arka Jain University, India", role: "Organizing Co-Chair" },
-  { name: "Prof. M. Das", affiliation: "Arka Jain University, India", role: "Organizing Secretary" },
-  { name: "Dr. N. Verma", affiliation: "Arka Jain University, India", role: "Joint Secretary" },
-];
-
-const technicalCommittee: CommitteeMember[] = [
-  { name: "Prof. J. Wilson", affiliation: "Stanford University, USA" },
-  { name: "Dr. L. Chen", affiliation: "Tsinghua University, China" },
-  { name: "Prof. A. Müller", affiliation: "TU Munich, Germany" },
-  { name: "Dr. K. Tanaka", affiliation: "University of Tokyo, Japan" },
-  { name: "Prof. R. Patel", affiliation: "IIT Delhi, India" },
-  { name: "Dr. S. Ahmed", affiliation: "NUS, Singapore" },
-  { name: "Prof. E. Johnson", affiliation: "MIT, USA" },
-  { name: "Dr. M. Garcia", affiliation: "University of Barcelona, Spain" },
-];
-
-const advisoryBoard: CommitteeMember[] = [
-  { name: "Prof. D. Brown", affiliation: "University of Cambridge, UK" },
-  { name: "Dr. H. Yamamoto", affiliation: "Kyoto University, Japan" },
-  { name: "Prof. V. Reddy", affiliation: "IISc Bangalore, India" },
-  { name: "Dr. F. Rossi", affiliation: "University of Padova, Italy" },
-  { name: "Prof. C. Wang", affiliation: "Peking University, China" },
-  { name: "Dr. A. Okafor", affiliation: "University of Lagos, Nigeria" },
+  {
+    name: "Prof. (Dr.) Easwaran S. Iyer",
+    role: "Chief Patron",
+    affiliation: "Vice-Chancellor, ARKA Jain University",
+  },
+  {
+    name: "Dr. Amit Kumar Shrivastav",
+    role: "Patron",
+    affiliation: "Registrar, ARKA Jain University",
+  },
+  {
+    name: "Dr. Angad Tiwari",
+    role: "Patron",
+    affiliation: "Pro-Vice Chancellor, ARKA Jain University",
+  },
+  {
+    name: "Dr. Sukumar Mishra",
+    role: "Patron",
+    affiliation: "Director, IIT Dhanbad",
+  },
+  {
+    name: "Dr. Narayan Prasad Padhy",
+    role: "Patron",
+    affiliation: "Director, MNIT Jaipur, Rajasthan",
+  },
+  {
+    name: "Dr. Arvind Kumar Pandey",
+    role: "Patron",
+    affiliation: "IQAC Director, School of Engineering and IT, ARKA Jain University",
+  },
+  {
+    name: "Dr. Ashwini Kumar",
+    role: "Patron",
+    affiliation: "Dean, School of Engineering and IT, ARKA Jain University",
+  },
+  {
+    name: "Dr. Aditya Prasad Padhy, SMIEEE",
+    role: "Organizing Chair",
+    affiliation: "IEEE-AJU Student Branch Chair",
+  },
+  { name: "TBA", role: "Organizing Co-Chair", affiliation: "ARKA Jain University" },
+  { name: "TBA", role: "Finance Chair", affiliation: "ARKA Jain University" },
+  {
+    name: "Dr. Prem Nath Suman",
+    role: "Finance Chair",
+    affiliation: "ARKA Jain University",
+  },
+  {
+    name: "Dr. Shailesh Kumar",
+    role: "Publication Chair",
+    affiliation: "Associate Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Dr. Kasinath Jena",
+    role: "Publication Chair",
+    affiliation: "Associate Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Dr. Amit Prakash Sen",
+    role: "Publication Chair",
+    affiliation: "Associate Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Dr. Binod Kumar Choudhary",
+    role: "Publication Chair",
+    affiliation: "Associate Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Dr. Anupam Kumari",
+    role: "Publication Chair",
+    affiliation: "Associate Professor, ME, ARKA Jain University",
+  },
+  {
+    name: "Mrs. Taniya Ghosh",
+    role: "Sponsorship Chair",
+    affiliation: "Assistant Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Prof. Dr. Sanjeevikumar Padmanaban",
+    role: "Technical Program Chair",
+    affiliation: "University of South-Eastern Norway",
+  },
+  {
+    name: "Dr. Ashok Kumar Pradhan",
+    role: "Technical Program Chair",
+    affiliation: "Professor, IIT Kharagpur",
+  },
+  {
+    name: "Dr. Deepak Reddy Pullaguram",
+    role: "Technical Program Chair",
+    affiliation: "Assistant Professor, IIT Kharagpur",
+  },
+  {
+    name: "Dr. Dushyant Sharma",
+    role: "Technical Program Chair",
+    affiliation: "Assistant Professor, IIT Dhanbad",
+  },
+  {
+    name: "Dr. Paresh Kumar Nayak",
+    role: "Technical Program Chair",
+    affiliation: "Assistant Professor, IIT Dhanbad",
+  },
+  {
+    name: "Dr. Tridibesh Nag",
+    role: "Technical Program Chair",
+    affiliation: "Vice Chair, IEEE Kolkata Section",
+  },
+  {
+    name: "Dr. Susanta Ray",
+    role: "Technical Program Chair",
+    affiliation: "Secretary, IEEE Kolkata Section",
+  },
+  {
+    name: "Dr. Vinay Pratap Singh",
+    role: "Technical Program Chair",
+    affiliation: "MNIT Jaipur",
+  },
+  {
+    name: "Dr. Varsha Singh",
+    role: "Technical Program Chair",
+    affiliation: "NIT Raipur",
+  },
+  {
+    name: "Dr. Veer Pratap Meena",
+    role: "Technical Program Chair",
+    affiliation: "NIT Jamshedpur",
+  },
+  {
+    name: "Dr. Shailesh Kumar",
+    role: "Technical Program Chair",
+    affiliation: "ARKA Jain University, Jharkhand",
+  },
+  {
+    name: "Dr. Kasinath Jena",
+    role: "Technical Program Chair",
+    affiliation: "ARKA Jain University, Jharkhand",
+  },
+  {
+    name: "Dr. Md Irfan Ahmed",
+    role: "Technical Program Chair",
+    affiliation: "Assistant Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Dr. Amit Prakash Sen",
+    role: "Technical Program Chair",
+    affiliation: "Associate Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Dr. Binod Kumar Choudhary",
+    role: "Technical Program Chair",
+    affiliation: "Associate Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Dr. Nidhi Dua",
+    role: "Technical Program Chair",
+    affiliation: "Assistant Professor, CSE, ARKA Jain University",
+  },
+  {
+    name: "Mrs. Sarita Srivastav",
+    role: "Hospitality Chair",
+    affiliation: "Assistant Professor, EE, ARKA Jain University",
+  },
+  {
+    name: "Mr. Manjur Ansari",
+    role: "Hospitality Chair",
+    affiliation: "Assistant Professor, EE, ARKA Jain University",
+  },
 ];
 
 function CommitteeTable({ title, members, showRole = false }: { title: string; members: CommitteeMember[]; showRole?: boolean }) {
@@ -58,8 +196,8 @@ function CommitteeTable({ title, members, showRole = false }: { title: string; m
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
-            {members.map((m) => (
-              <tr key={m.name} className="hover:bg-gray-50 transition-colors">
+            {members.map((m, index) => (
+              <tr key={`${m.name}-${m.role ?? "member"}-${index}`} className="hover:bg-gray-50 transition-colors">
                 <td className="px-4 py-3 font-medium text-foreground">{m.name}</td>
                 {showRole && <td className="px-4 py-3 text-accent-dark font-medium">{m.role}</td>}
                 <td className="px-4 py-3 text-gray-600">{m.affiliation}</td>
@@ -84,26 +222,8 @@ export default function CommitteePage() {
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* General Chairs — featured */}
-          <SectionHeading title="General Chairs" />
-          <div className="flex flex-wrap justify-center gap-8 mb-16">
-            {generalChairs.map((chair) => (
-              <div key={chair.name} className="text-center w-56">
-                <div className="w-28 h-28 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                  <span className="text-primary font-bold text-3xl">
-                    {chair.name.split(" ").pop()?.[0]}
-                  </span>
-                </div>
-                <h3 className="font-bold text-foreground text-lg">{chair.name}</h3>
-                <p className="text-sm text-accent font-medium">{chair.role}</p>
-                <p className="text-xs text-gray-600 mt-1">{chair.affiliation}</p>
-              </div>
-            ))}
-          </div>
-
+          <SectionHeading title="Organizing Committee" />
           <CommitteeTable title="Organizing Committee" members={organizingCommittee} showRole />
-          <CommitteeTable title="Technical Program Committee" members={technicalCommittee} />
-          <CommitteeTable title="Advisory Board" members={advisoryBoard} />
         </div>
       </section>
     </>
