@@ -16,42 +16,42 @@ const organizingCommittee: CommitteeMember[] = [
   {
     name: "Prof. (Dr.) Easwaran S. Iyer",
     role: "Chief Patron",
-    affiliation: "Vice-Chancellor, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Amit Kumar Shrivastav",
     role: "Patron",
-    affiliation: "Registrar, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Angad Tiwari",
     role: "Patron",
-    affiliation: "Pro-Vice Chancellor, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Sukumar Mishra",
     role: "Patron",
-    affiliation: "Director, IIT Dhanbad",
+    affiliation: "IIT Dhanbad",
   },
   {
     name: "Dr. Narayan Prasad Padhy",
     role: "Patron",
-    affiliation: "Director, MNIT Jaipur, Rajasthan",
+    affiliation: "MNIT Jaipur, Rajasthan",
   },
   {
     name: "Dr. Arvind Kumar Pandey",
     role: "Patron",
-    affiliation: "IQAC Director, School of Engineering and IT, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Ashwini Kumar",
     role: "Patron",
-    affiliation: "Dean, School of Engineering and IT, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Aditya Prasad Padhy, SMIEEE",
     role: "Organizing Chair",
-    affiliation: "IEEE-AJU Student Branch Chair",
+    affiliation: "ARKA Jain University",
   },
   { name: "TBA", role: "Organizing Co-Chair", affiliation: "ARKA Jain University" },
   { name: "TBA", role: "Finance Chair", affiliation: "ARKA Jain University" },
@@ -63,32 +63,32 @@ const organizingCommittee: CommitteeMember[] = [
   {
     name: "Dr. Shailesh Kumar",
     role: "Publication Chair",
-    affiliation: "Associate Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Kasinath Jena",
     role: "Publication Chair",
-    affiliation: "Associate Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Amit Prakash Sen",
     role: "Publication Chair",
-    affiliation: "Associate Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Binod Kumar Choudhary",
     role: "Publication Chair",
-    affiliation: "Associate Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Anupam Kumari",
     role: "Publication Chair",
-    affiliation: "Associate Professor, ME, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Mrs. Taniya Ghosh",
     role: "Sponsorship Chair",
-    affiliation: "Assistant Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Prof. Dr. Sanjeevikumar Padmanaban",
@@ -98,32 +98,32 @@ const organizingCommittee: CommitteeMember[] = [
   {
     name: "Dr. Ashok Kumar Pradhan",
     role: "Technical Program Chair",
-    affiliation: "Professor, IIT Kharagpur",
+    affiliation: "IIT Kharagpur",
   },
   {
     name: "Dr. Deepak Reddy Pullaguram",
     role: "Technical Program Chair",
-    affiliation: "Assistant Professor, IIT Kharagpur",
+    affiliation: "IIT Kharagpur",
   },
   {
     name: "Dr. Dushyant Sharma",
     role: "Technical Program Chair",
-    affiliation: "Assistant Professor, IIT Dhanbad",
+    affiliation: "IIT Dhanbad",
   },
   {
     name: "Dr. Paresh Kumar Nayak",
     role: "Technical Program Chair",
-    affiliation: "Assistant Professor, IIT Dhanbad",
+    affiliation: "IIT Dhanbad",
   },
   {
     name: "Dr. Tridibesh Nag",
     role: "Technical Program Chair",
-    affiliation: "Vice Chair, IEEE Kolkata Section",
+    affiliation: "IEEE Kolkata Section",
   },
   {
     name: "Dr. Susanta Ray",
     role: "Technical Program Chair",
-    affiliation: "Secretary, IEEE Kolkata Section",
+    affiliation: "IEEE Kolkata Section",
   },
   {
     name: "Dr. Vinay Pratap Singh",
@@ -143,42 +143,42 @@ const organizingCommittee: CommitteeMember[] = [
   {
     name: "Dr. Shailesh Kumar",
     role: "Technical Program Chair",
-    affiliation: "ARKA Jain University, Jharkhand",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Kasinath Jena",
     role: "Technical Program Chair",
-    affiliation: "ARKA Jain University, Jharkhand",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Md Irfan Ahmed",
     role: "Technical Program Chair",
-    affiliation: "Assistant Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Amit Prakash Sen",
     role: "Technical Program Chair",
-    affiliation: "Associate Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Binod Kumar Choudhary",
     role: "Technical Program Chair",
-    affiliation: "Associate Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Dr. Nidhi Dua",
     role: "Technical Program Chair",
-    affiliation: "Assistant Professor, CSE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Mrs. Sarita Srivastav",
     role: "Hospitality Chair",
-    affiliation: "Assistant Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
   {
     name: "Mr. Manjur Ansari",
     role: "Hospitality Chair",
-    affiliation: "Assistant Professor, EE, ARKA Jain University",
+    affiliation: "ARKA Jain University",
   },
 ];
 
