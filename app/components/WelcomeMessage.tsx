@@ -8,7 +8,7 @@ export default function WelcomeMessage() {
 
         <div className="max-w-4xl mx-auto">
           {/* Chairs */}
-          <div className="flex flex-wrap justify-center gap-8 mb-10">
+          {/* <div className="flex flex-wrap justify-center gap-8 mb-10">
             {[
               {
                 name: "Prof. (Dr.) Easwaran S. Iyer",
@@ -32,7 +32,7 @@ export default function WelcomeMessage() {
                 <p className="text-xs text-gray-600">{chair.affiliation}</p>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Message */}
           <div className="prose prose-sm sm:prose-base max-w-none text-gray-600 space-y-4 leading-relaxed">
