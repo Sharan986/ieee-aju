@@ -86,19 +86,18 @@ export default function AboutPage() {
 
               {/* Department Info */}
               <div>
-                <SectionHeading title="Department of Computer Science & Engineering" />
+                <SectionHeading title="Department of Electrical and Electronics Engineering" />
                 <div className="prose prose-sm sm:prose-base max-w-none text-gray-600 space-y-4 leading-relaxed">
                   <p>
-                    The Department of Computer Science & Engineering at AJU has been consistently
-                    producing highly skilled and industry-ready engineers since its inception.
-                    Along with strong academic foundations, the department is actively involved in
-                    research and development across emerging areas of computer science and artificial
-                    intelligence.
-                  </p>
+                    The Department of Electrical and Electronics Engineering at ARKA Jain University has been consistently 
+                    producing highly skilled and industry-ready engineers since its inception. 
+                    Along with strong academic foundations, the department is actively involved in research and development 
+                    across emerging areas of Electrical, Electronics, and artificial intelligence, including projects 
+                    focused on renewable energy systems, smart grid technology, and machine learning applications in automation.                  </p>
                   <p>
-                    The department offers undergraduate (B.Tech) and postgraduate programmes in
-                    Computer Science, Artificial Intelligence & Machine Learning, and Data Science,
-                    along with a Ph.D. programme covering multiple specialized domains.
+                    The department offers undergraduate (B.Tech) and postgraduate programs in Electrical, 
+                    Electronics, Artificial Intelligence, and Machine Learning, 
+                    along with a Ph.D. program covering multiple specialized domains.
                   </p>
                 </div>
               </div>
