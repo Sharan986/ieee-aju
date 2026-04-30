@@ -27,11 +27,16 @@ export default function Footer() {
                   Jharkhand 832108, India
                 </span>
               </li>
-              <li className="flex items-center gap-2">
-                <FaEnvelope className="shrink-0 text-accent" />
-                <a href="mailto:jhicon2027@arkajainuniversity.ac.in" className="hover:text-accent transition-colors">
-                  jhicon2027@arkajainuniversity.ac.in
-                </a>
+              <li className="flex items-start gap-2">
+                <FaEnvelope className="shrink-0 text-accent mt-1" />
+                <div className="flex flex-col">
+                  <a href="mailto:dr.ashwini@arkajainuniversity.ac.in" className="hover:text-accent transition-colors">
+                    dr.ashwini@arkajainuniversity.ac.in
+                  </a>
+                  <a href="mailto:dr.aditya@arkajainuniversity.ac.in" className="hover:text-accent transition-colors mt-1">
+                    dr.aditya@arkajainuniversity.ac.in
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

@@ -61,7 +61,7 @@ export default function SponsorsPage() {
               of researchers, engineers, and innovators in the field of electrical engineering and computing.
             </p>
             <a
-              href="mailto:jhicon2027@arkajainuniversity.ac.in?subject=Sponsorship%20Inquiry%20-%20JHICON-2027"
+              href="mailto:dr.ashwini@arkajainuniversity.ac.in,dr.aditya@arkajainuniversity.ac.in?subject=Sponsorship%20Inquiry%20-%20JHICON-2027"
               className="inline-block px-8 py-3 rounded-lg bg-accent text-primary-dark font-bold text-sm hover:bg-accent-light transition-colors"
             >
               Contact Us for Sponsorship

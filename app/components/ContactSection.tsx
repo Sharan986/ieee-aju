@@ -118,9 +118,14 @@ export default function ContactSection() {
                 <FaEnvelope className="text-primary mt-0.5 shrink-0" />
                 <div className="text-sm text-gray-600 min-w-0">
                   <p className="font-semibold text-foreground">Email</p>
-                  <a href="mailto:jhicon2027@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all">
-                    jhicon2027@arkajainuniversity.ac.in
-                  </a>
+                  <div className="flex flex-col gap-1 mt-1">
+                    <a href="mailto:dr.ashwini@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all">
+                      dr.ashwini@arkajainuniversity.ac.in
+                    </a>
+                    <a href="mailto:dr.aditya@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all">
+                      dr.aditya@arkajainuniversity.ac.in
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

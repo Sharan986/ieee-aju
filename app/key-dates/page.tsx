@@ -109,10 +109,17 @@ export default function KeyDatesPage() {
               Dates are subject to change. Please check this page regularly for any updates.
               For any queries regarding deadlines, please contact us at{" "}
               <a
-                href="mailto:jhicon2027@arkajainuniversity.ac.in"
+                href="mailto:dr.ashwini@arkajainuniversity.ac.in,dr.aditya@arkajainuniversity.ac.in"
                 className="text-primary font-medium hover:text-accent transition-colors"
               >
-                jhicon2027@arkajainuniversity.ac.in
+                dr.ashwini@arkajainuniversity.ac.in
+              </a>{" "}
+              or{" "}
+              <a
+                href="mailto:dr.aditya@arkajainuniversity.ac.in"
+                className="text-primary font-medium hover:text-accent transition-colors"
+              >
+                dr.aditya@arkajainuniversity.ac.in
               </a>
               .
             </p>
