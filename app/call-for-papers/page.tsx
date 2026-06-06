@@ -179,12 +179,14 @@ export default function CallForPapersPage() {
                     The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
                   </div>
 
-                  <Link
-                    href="/register"
+                  <a
+                    href="https://cmt3.research.microsoft.com/JHICON2027"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-primary-dark font-bold text-sm hover:bg-accent-light transition-colors"
                   >
                     <FaPaperPlane /> Submit Your Paper
-                  </Link>
+                  </a>
                   <Link
                     href="/key-dates"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-semibold text-sm hover:bg-primary hover:text-white transition-colors"
