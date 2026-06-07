@@ -69,6 +69,16 @@ const organizingCommittee: CommitteeMember[] = [
     affiliation: "National University of Singapore, Singapore",
   },
   {
+    name: "Dr. Traikul Islam(PhD)",
+    role: "Honorary Chair",
+    affiliation: "JMI (Central University), Department of Electrical Engineering, Faculty of Engg. and Technology",
+  },
+  {
+    name: "Prof. Dr. Bidyadhar Subudhi",
+    role: "Honorary Chair",
+    affiliation: "Director, NIT Warangal",
+  },
+  {
     name: "Dr. Aditya Prasad Padhy",
     role: "General Chair",
     affiliation: "AJU, Jharkhand, India",
@@ -142,6 +152,16 @@ const organizingCommittee: CommitteeMember[] = [
     name: "Dr. Kasinath Jena",
     role: "Technical Programme Committee Chair",
     affiliation: "AJU, Jharkhand, India",
+  },
+  {
+    name: "Dr. Rabindra Mohanty",
+    role: "Technical Programme Committee Chair",
+    affiliation: "IIT Delhi",
+  },
+  {
+    name: "Dr. Dilip Kumar Mishra",
+    role: "Technical Programme Committee Chair",
+    affiliation: "Research Fellow, Flinders University, Adelaide, Australia",
   },
   {
     name: "Dr. Amit Prakash Sen",
