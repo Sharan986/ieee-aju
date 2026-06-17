@@ -14,13 +14,8 @@ interface CommitteeMember {
 
 const organizingCommittee: CommitteeMember[] = [
   {
-    name: "Dr. Chenraj Roychand",
-    role: "Chief Patron",
-    affiliation: "AJU, Jharkhand, India",
-  },
-  {
     name: "Prof. (Dr.) Easwaran S. Iyer",
-    role: "Patron",
+    role: "Chief Patron",
     affiliation: "AJU, Jharkhand, India",
   },
   {
@@ -77,6 +72,21 @@ const organizingCommittee: CommitteeMember[] = [
     name: "Prof. Dr. Bidyadhar Subudhi",
     role: "Honorary Chair",
     affiliation: "Director, NIT Warangal",
+  },
+  {
+    name: "Prof. Narayan Prasad Padhy",
+    role: "Honorary Chair",
+    affiliation: "Director, MNIT, Jaipur",
+  },
+  {
+    name: "Prof. Brij Bhooshan Gupta",
+    role: "Honorary Chair",
+    affiliation: "Asia University, Taiwan",
+  },
+  {
+    name: "Prof. Bhim Singh",
+    role: "Honorary Chair",
+    affiliation: "ANRF National Science Chair and Emeritus Professor, Indian Institute of Technology Delhi",
   },
   {
     name: "Dr. Aditya Prasad Padhy",
