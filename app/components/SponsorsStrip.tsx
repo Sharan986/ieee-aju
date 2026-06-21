@@ -22,13 +22,13 @@ export default function SponsorsStrip() {
               key={s.name}
               className="flex flex-col items-center gap-2"
             >
-              <div className="w-24 h-24 rounded-lg bg-white border border-gray-200 shadow-sm flex items-center justify-center">
+              <div className="w-40 h-40 rounded-lg bg-white border border-gray-200 shadow-sm flex items-center justify-center overflow-hidden">
                 <Image
                   src={s.logo}
                   alt={s.name}
-                  width={96}
-                  height={96}
-                  className="h-20 w-20 object-contain p-2"
+                  width={160}
+                  height={160}
+                  className="h-36 w-36 object-contain p-0"
                 />
               </div>
               <span className="text-xs text-gray-600">{s.tier}</span>

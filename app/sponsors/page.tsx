@@ -42,13 +42,13 @@ export default function SponsorsPage() {
                     key={s.name}
                     className="group flex flex-col items-center gap-3"
                   >
-                    <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl bg-white border-2 border-gray-200 shadow-sm flex items-center justify-center group-hover:border-accent group-hover:shadow-md transition-all">
+                    <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-xl bg-white border-2 border-gray-200 shadow-sm flex items-center justify-center group-hover:border-accent group-hover:shadow-md transition-all overflow-hidden">
                       <Image
                         src={s.logo}
                         alt={s.name}
-                        width={160}
-                        height={160}
-                        className="h-24 w-24 sm:h-28 sm:w-28 object-contain p-2"
+                        width={224}
+                        height={224}
+                        className="h-40 w-40 sm:h-44 sm:w-44 object-contain p-0"
                       />
                     </div>
                     <span className="text-sm text-gray-600 font-medium">{s.name}</span>
