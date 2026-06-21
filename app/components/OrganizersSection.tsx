@@ -45,13 +45,13 @@ export default function OrganizersSection() {
               rel="noopener noreferrer"
               className="block bg-white rounded-xl shadow-sm border border-gray-200 p-6 text-center hover:shadow-md transition-shadow hover:cursor-pointer"
             >
-              <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <div className="w-36 h-36 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4 overflow-hidden">
                 <Image
                   src={org.logo}
                   alt={org.name}
-                  width={80}
-                  height={80}
-                  className="h-20 w-20 rounded-full object-contain p-2"
+                  width={144}
+                  height={144}
+                  className="h-36 w-36 rounded-full object-contain p-0"
                 />
               </div>
               <h3 className="font-bold text-foreground text-base">{org.name}</h3>
