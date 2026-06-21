@@ -41,7 +41,7 @@ export default function HeroSection() {
           </p> */}
 
           {/* Date & Venue */}
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm sm:text-base text-white/80">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-base sm:text-lg text-white/85 font-medium">
             <div className="flex items-center gap-2">
               <FaCalendarAlt className="text-accent" />
               <span>February 2–3, 2027</span>
