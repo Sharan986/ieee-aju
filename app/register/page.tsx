@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import type { Metadata } from "next";
+import { QRCodeSVG } from "qrcode.react";
 
 export const metadata: Metadata = {
   title: "Register | JHICON-2027",
@@ -12,40 +13,52 @@ const GOOGLE_FORM_URL = "#";
 
 const feeRows = [
   {
-    category: "Students",
-    india: ["INR 6000", "INR 5000", "INR 7000", "INR 6500"],
-    abroad: ["USD 150", "USD 100", "USD 200", "USD 150"],
+    category: "Students (UG/PG/PhD)",
+    india: ["INR 6000", "INR 6500", "INR 7000", "INR 7500"],
+    abroad: ["USD 100", "USD 125", "USD 150", "USD 175"],
   },
   {
-    category: "Academia",
-    india: ["INR 7000", "INR 6000", "INR 8000", "INR 7500"],
-    abroad: ["USD 250", "USD 200", "USD 300", "USD 250"],
+    category: "Professional from Academia/Research Institute",
+    india: ["INR 7000", "INR 7500", "INR 8000", "INR 8500"],
+    abroad: ["USD 200", "USD 225", "USD 250", "USD 275"],
   },
   {
-    category: "Industry",
-    india: ["INR 8000", "INR 7500", "INR 9000", "INR 10000"],
-    abroad: ["USD 300", "USD 250", "USD 350", "USD 300"],
+    category: "Professional from the Industry",
+    india: ["INR 8500", "INR 9000", "INR 9500", "INR 10000"],
+    abroad: ["USD 250", "USD 275", "USD 300", "USD 325"],
   },
   {
     category: "Attendee (Student/Academia/Industry)",
-    india: ["INR 2000", "INR 1000", "INR 2500", "INR 1500"],
-    abroad: ["USD 100", "USD 50", "USD 125", "USD 70"],
+    india: ["INR 1200", "INR 1500", "INR 1800", "INR 2100"],
+    abroad: ["USD 50", "USD 75", "USD 100", "USD 125"],
   },
 ] as const;
 
 const indiaColumns = [
-  "IEEE (Physical Mode)",
   "IEEE (Virtual Mode)",
-  "Non-IEEE (Physical Mode)",
+  "IEEE (Physical Mode)",
   "Non-IEEE (Virtual Mode)",
+  "Non-IEEE (Physical Mode)",
 ];
 
 const abroadColumns = [
-  "IEEE (Physical)",
   "IEEE (Virtual Mode)",
-  "Non-IEEE (Physical Mode)",
+  "IEEE (Physical)",
   "Non-IEEE (Virtual Mode)",
+  "Non-IEEE (Physical Mode)",
 ];
+
+const bankDetails = [
+  { label: "Account Name", value: "ARKA JAIN UNIVERSITY" },
+  { label: "Account No.", value: "20200019796624" },
+  { label: "IFSC Code", value: "BDBL0002495" },
+  { label: "Bank Name", value: "Bandhan Bank" },
+  { label: "Branch", value: "Adityapur" },
+  { label: "Swift Code", value: "BNDNINCC" },
+] as const;
+
+const upiQrValue =
+  "upi://pay?pa=3217855a@bandhan&pn=ARKA%20JAIN%20UNIVERSITY&cu=INR";
 
 export default function RegisterPage() {
 
@@ -90,9 +103,9 @@ export default function RegisterPage() {
 
             {/* Registration Fee Table */}
             <div className="mt-12 text-left">
-              <h3 className="text-lg font-bold text-primary mb-4 text-center">Registration Fees Details</h3>
+              <h3 className="text-lg font-bold text-primary mb-4 text-center">Registration Fees</h3>
               <div className="overflow-x-auto rounded-2xl border border-gray-200">
-                <table className="w-full min-w-275 border-collapse text-sm">
+                <table className="w-full min-w-[1100px] border-collapse text-sm">
                   <thead>
                     <tr className="bg-primary/5">
                       <th className="border border-gray-300 px-4 py-3 text-center text-base font-bold text-foreground" rowSpan={2}>
@@ -140,8 +153,30 @@ export default function RegisterPage() {
                 </table>
               </div>
               <p className="mt-4 text-center text-sm font-semibold text-foreground">
-                * With additional 18% GST on all Registration charges
+                Note: All registration fees are inclusive of 18% GST.
               </p>
+
+              <div className="mt-10 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-6 rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+                <div>
+                  <h4 className="text-lg font-bold text-primary text-center lg:text-left">Account Details</h4>
+                  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {bankDetails.map((detail) => (
+                      <div key={detail.label} className="rounded-xl border border-gray-200 bg-white p-4">
+                        <p className="text-xs uppercase tracking-wide text-gray-500">{detail.label}</p>
+                        <p className="mt-1 text-sm font-semibold text-foreground break-all">{detail.value}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center justify-center rounded-xl border border-gray-200 bg-white p-5 text-center">
+                  <p className="text-base font-bold text-foreground">Scan & Pay</p>
+                  <div className="mt-4 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+                    <QRCodeSVG value={upiQrValue} size={220} level="M" includeMargin />
+                  </div>
+                  <p className="mt-4 text-xs text-gray-500 break-all">UPI ID: 3217855a@bandhan</p>
+                </div>
+              </div>
             </div>
           </div>
 
