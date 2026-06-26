@@ -1,5 +1,6 @@
 import SectionHeading from "../components/SectionHeading";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Committee | JHICON-2027",
@@ -10,23 +11,33 @@ interface CommitteeMember {
   name: string;
   affiliation: string;
   role?: string;
+  image?: string;
 }
 
 const organizingCommittee: CommitteeMember[] = [
   {
+    name: "Dr. Chenraj Roychand",
+    role: "Chancellor & Chief Patron",
+    affiliation: "Chancellor, AJU, Jharkhand",
+    image: "/committee/chenraj_roychand.jpg",
+  },
+  {
     name: "Prof. (Dr.) Easwaran S. Iyer",
     role: "Chief Patron",
     affiliation: "Vice-Chancellor, AJU, Jharkhand",
+    image: "/committee/easwaran_s_iyer.jpg",
   },
   {
     name: "Dr. Amit Kumar Shrivastav",
     role: "Patron",
     affiliation: "Registrar, AJU, Jharkhand",
+    image: "/committee/amit_kumar_shrivastav.jpg",
   },
   {
     name: "Prof. (Dr.) Angad Tiwari",
     role: "Patron",
     affiliation: "Pro-Vice Chancellor, AJU, Jharkhand",
+    image: "/committee/angad_tiwari.jpg",
   },
   {
     name: "Prof. (Dr.) S. S Razi",
@@ -37,36 +48,46 @@ const organizingCommittee: CommitteeMember[] = [
     name: "Mrs. Richa Garg",
     role: "Co-Patron",
     affiliation: "AJU, Jharkhand",
+    image: "/committee/richa_garg.jpg",
   },
   {
     name: "Dr. Jasbir Singh Dhanjal",
     role: "Co-Patron",
     affiliation: "AJU, Jharkhand",
+    image: "/committee/jasbir_singh_dhanjal.jpg",
   },
   {
     name: "Dr. Arvind Kumar Pandey",
     role: "Co-Patron",
     affiliation: "AJU, Jharkhand",
+    image: "/committee/arvind_kumar_pandey.jpg",
   },
   {
     name: "Dr. Ashwini Kumar",
     role: "Co-Patron",
     affiliation: "AJU, Jharkhand",
+    image: "/committee/ashwini_kumar.jpg",
   },
+];
+
+const honoraryChairs: CommitteeMember[] = [
   {
     name: "Prof. (Dr.) Narayana Prasad Padhy",
     role: "Honorary Chair",
     affiliation: "Director, MNIT, Jaipur",
+    image: "/committee/narayana_prasad_padhy.jpg",
   },
   {
     name: "Prof. (Dr.) Bidyadhar Subudhi",
     role: "Honorary Chair",
     affiliation: "Director, NIT, Warangal",
+    image: "/committee/bidyadhar_subudhi.jpg",
   },
   {
     name: "Prof. (Dr.) Ashok Kumar Pradhan",
     role: "Honorary Chair",
     affiliation: "IIT, Kharagpur",
+    image: "/committee/ashok_kumar_pradhan.jpg",
   },
   {
     name: "Prof. (Dr.) Aurobinda Routray",
@@ -77,11 +98,13 @@ const organizingCommittee: CommitteeMember[] = [
     name: "Prof. (Dr.) Bhim Singh",
     role: "Honorary Chair",
     affiliation: "ANRF National Science Chair, IIT, Delhi",
+    image: "/committee/bhim_singh.jpg",
   },
   {
-    name: "Prof. (Dr.) Sanjeev Padmanaban",
+    name: "Prof. (Dr.) Sanjeevikumar Padmanaban",
     role: "Honorary Chair",
     affiliation: "USN, Norway",
+    image: "/committee/sanjeev_padmanaban.jpg",
   },
   {
     name: "Prof. (Dr.) Chandan Chakraborty",
@@ -97,6 +120,7 @@ const organizingCommittee: CommitteeMember[] = [
     name: "Prof. (Dr.) Brij Bhooshan Gupta",
     role: "Honorary Chair",
     affiliation: "Asia University, Taiwan",
+    image: "/committee/brij_bhooshan_gupta.jpg",
   },
   {
     name: "Prof. (Dr.) Sidhartha Panda",
@@ -109,15 +133,28 @@ const organizingCommittee: CommitteeMember[] = [
     affiliation: "OUTR, Bhubaneswar",
   },
   {
+    name: "Prof. (Dr.) Tarikul Islam",
+    role: "Honorary Chair",
+    affiliation: "Jamia Millia Islamia, New Delhi",
+    image: "/committee/tarikul_islam.jpg",
+  },
+  {
     name: "Prof. (Dr.) Chinmoy Panigrahi",
     role: "Honorary Chair",
     affiliation: "KIIT University, Bhubaneswar",
   },
+];
+
+const generalChairs: CommitteeMember[] = [
   {
     name: "Dr. Aditya Prasad Padhy",
     role: "General Chair",
     affiliation: "AJU, Jharkhand, India",
+    image: "/committee/aditya_prasad_padhy.jpg",
   },
+];
+
+const tpcChairs: CommitteeMember[] = [
   {
     name: "Dr. Deepak Reddy Pullaguram",
     role: "Technical Programme Committee Chair",
@@ -169,11 +206,6 @@ const organizingCommittee: CommitteeMember[] = [
     affiliation: "NIT, Raipur",
   },
   {
-    name: "Dr. Veerpratap Meena",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Jamshedpur",
-  },
-  {
     name: "Dr. Kumari Namrata",
     role: "Technical Programme Committee Chair",
     affiliation: "NIT, Jamshedpur",
@@ -194,7 +226,7 @@ const organizingCommittee: CommitteeMember[] = [
     affiliation: "Flinders University, Australia",
   },
   {
-    name: "Dr. Trilocahan Panigrahi",
+    name: "Dr. Trilochanan Panigrahi",
     role: "Technical Programme Committee Chair",
     affiliation: "NIT, Goa",
   },
@@ -239,6 +271,11 @@ const organizingCommittee: CommitteeMember[] = [
     affiliation: "GUT, Poland",
   },
   {
+    name: "Dr. Gajendra Kant Mishra",
+    role: "Technical Programme Committee Chair",
+    affiliation: "BIT, Mesra",
+  },
+  {
     name: "Dr. Krishna Kumar Gupta",
     role: "Technical Programme Committee Chair",
     affiliation: "Thapar University, Punjab",
@@ -264,14 +301,14 @@ const organizingCommittee: CommitteeMember[] = [
     affiliation: "AJU, Jharkhand, India",
   },
   {
-    name: "Dr. Jonaki Mukharjee",
+    name: "Dr. Jonaki Mukherjee",
     role: "Technical Programme Committee Chair",
     affiliation: "AJU, Jharkhand, India",
   },
 ];
 
 const financeChairs: CommitteeMember[] = [
-  { name: "Dr. Ashwini Kumar", role: "Finance Chair", affiliation: "AJU, Jharkhand, India" },
+  { name: "Dr. Ashwini Kumar", role: "Finance Chair", affiliation: "AJU, Jharkhand, India", image: "/committee/ashwini_kumar.jpg" },
   { name: "Dr. Prem Nath Suman", role: "Finance Chair", affiliation: "AJU, Jharkhand, India" },
 ];
 
@@ -282,16 +319,17 @@ const industryChairs: CommitteeMember[] = [
 ];
 
 const publicationChairs: CommitteeMember[] = [
-  // No names provided in the request; placeholder left intentionally empty
+  { name: "Dr. Veerpratap Meena", role: "Publication Chair", affiliation: "NIT, Jamshedpur" },
+  { name: "Dr. Gajendra Kant Mishra", role: "Publication Chair", affiliation: "BIT, Mesra" },
+  { name: "Prof. (Dr.) Sonia Riyat", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Shailesh Kumar", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Nidhi Dua", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Md Irfan Ahmed", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Amit Prakash Sen", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Binod Kumar Choudhary", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
 ];
 
 const womenInEngineeringChairs: CommitteeMember[] = [
-  { name: "Dr. Sonia Riyat", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Shailesh Kumar", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Nidhi Dua", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Md Irfan Ahmed", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Amit Prakash Sen", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Binod Kumar Choudhary", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Susmita Kar", role: "WIE Chair", affiliation: "NIT, Rourkela" },
   { name: "Dr. Keerti Rai", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Anupam Kumari", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
@@ -308,8 +346,9 @@ const hospitalityChairs: CommitteeMember[] = [
 ];
 
 const localOrganizingCommittee: CommitteeMember[] = [
-  { name: "Dr. Shailesh Kumar Singh", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Shailendra Kumar", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Anup Kumar", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Chandraprabha Sahu", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Dilip Kumar", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Megha Sinha", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Ashish Ranjan", affiliation: "AJU, Jharkhand" },
@@ -325,7 +364,7 @@ const localOrganizingCommittee: CommitteeMember[] = [
   { name: "Prof. Soumya Shree", affiliation: "AJU, Jharkhand" },
   { name: "Mrs. Bilquis Bano", affiliation: "AJU, Jharkhand" },
   { name: "Mr. Mihir Kumar Mahakud", affiliation: "AJU, Jharkhand" },
-  { name: "Mr. Md Naseem Ansar", affiliation: "AJU, Jharkhand" },
+  { name: "Mr. Md Naseem Ansari", affiliation: "AJU, Jharkhand" },
 ];
 
 function CommitteeTable({ title, members, showRole = false }: { title: string; members: CommitteeMember[]; showRole?: boolean }) {
@@ -344,7 +383,22 @@ function CommitteeTable({ title, members, showRole = false }: { title: string; m
           <tbody className="divide-y divide-gray-100">
             {members.map((m, index) => (
               <tr key={`${m.name}-${m.role ?? "member"}-${index}`} className="hover:bg-gray-50 transition-colors">
-                <td className="px-4 py-3 font-medium text-foreground">{m.name}</td>
+                <td className="px-4 py-3 font-medium text-foreground">
+                  <div className="flex items-center gap-3">
+                    {m.image && (
+                      <div className="relative w-8 h-8 rounded-full overflow-hidden border border-gray-200 shrink-0">
+                        <Image
+                          src={m.image}
+                          alt={m.name}
+                          fill
+                          sizes="32px"
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
+                    <span>{m.name}</span>
+                  </div>
+                </td>
                 {showRole && <td className="px-4 py-3 text-accent-dark font-medium">{m.role}</td>}
                 <td className="px-4 py-3 text-gray-600">{m.affiliation}</td>
               </tr>
@@ -355,6 +409,111 @@ function CommitteeTable({ title, members, showRole = false }: { title: string; m
     </div>
   );
 }
+
+const organizingLeadership = [
+  {
+    name: "Dr. Chenraj Roychand",
+    role: "Chancellor & Chief Patron",
+    affiliation: "ARKA Jain University",
+    image: "/committee/chenraj_roychand.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Easwaran S. Iyer",
+    role: "Chief Patron",
+    affiliation: "Vice-Chancellor, AJU, Jharkhand",
+    image: "/committee/easwaran_s_iyer.jpg",
+  },
+  {
+    name: "Dr. Amit Kumar Shrivastav",
+    role: "Patron",
+    affiliation: "Registrar, AJU, Jharkhand",
+    image: "/committee/amit_kumar_shrivastav.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Angad Tiwari",
+    role: "Patron",
+    affiliation: "Pro-Vice Chancellor, AJU, Jharkhand",
+    image: "/committee/angad_tiwari.jpg",
+  },
+  {
+    name: "Mrs. Richa Garg",
+    role: "Co-Patron",
+    affiliation: "AJU, Jharkhand",
+    image: "/committee/richa_garg.jpg",
+  },
+  {
+    name: "Dr. Jasbir Singh Dhanjal",
+    role: "Co-Patron",
+    affiliation: "AJU, Jharkhand",
+    image: "/committee/jasbir_singh_dhanjal.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Arvind Kumar Pandey",
+    role: "Co-Patron",
+    affiliation: "AJU, Jharkhand",
+    image: "/committee/arvind_kumar_pandey.jpg",
+  },
+  {
+    name: "Dr. Ashwini Kumar",
+    role: "Co-Patron",
+    affiliation: "AJU, Jharkhand",
+    image: "/committee/ashwini_kumar.jpg",
+  },
+];
+
+const honoraryLeadership = [
+  {
+    name: "Prof. (Dr.) Narayana Prasad Padhy",
+    role: "Honorary Chair",
+    affiliation: "Director, MNIT, Jaipur",
+    image: "/committee/narayana_prasad_padhy.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Bidyadhar Subudhi",
+    role: "Honorary Chair",
+    affiliation: "Director, NIT, Warangal",
+    image: "/committee/bidyadhar_subudhi.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Ashok Kumar Pradhan",
+    role: "Honorary Chair",
+    affiliation: "IIT, Kharagpur",
+    image: "/committee/ashok_kumar_pradhan.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Bhim Singh",
+    role: "Honorary Chair",
+    affiliation: "ANRF National Science Chair, IIT, Delhi",
+    image: "/committee/bhim_singh.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Sanjeevikumar Padmanaban",
+    role: "Honorary Chair",
+    affiliation: "USN, Norway",
+    image: "/committee/sanjeev_padmanaban.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Tarikul Islam",
+    role: "Honorary Chair",
+    affiliation: "Jamia Millia Islamia, New Delhi",
+    image: "/committee/tarikul_islam.jpg",
+  },
+  {
+    name: "Prof. (Dr.) Brij Bhooshan Gupta",
+    role: "Honorary Chair",
+    affiliation: "Asia University, Taiwan",
+    image: "/committee/brij_bhooshan_gupta.jpg",
+  },
+];
+
+const generalLeadership = [
+  {
+    name: "Dr. Aditya Prasad Padhy",
+    role: "General Chair",
+    affiliation: "AJU, Jharkhand, India",
+    image: "/committee/aditya_prasad_padhy.jpg",
+  },
+];
 
 export default function CommitteePage() {
   return (
@@ -368,13 +527,123 @@ export default function CommitteePage() {
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading title="Organizing Committee" />
-          <CommitteeTable title="Organizing Committee" members={organizingCommittee} showRole />
-          <CommitteeTable title="Finance Chairs" members={financeChairs} showRole />
-          <CommitteeTable title="Industry Chairs" members={industryChairs} showRole />
-          <CommitteeTable title="Publication Chairs" members={publicationChairs} showRole />
-          <CommitteeTable title="Women in Engineering Chairs" members={womenInEngineeringChairs} showRole />
-          <CommitteeTable title="Hospitality & Logistics Chairs" members={hospitalityChairs} showRole />
+          <SectionHeading title="Organizing Committee Leadership" />
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
+            {organizingLeadership.map((leader) => (
+              <div
+                key={leader.name}
+                className="bg-white rounded-2xl border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 p-6 flex flex-col items-center text-center group"
+              >
+                <div className="relative w-36 h-36 rounded-full overflow-hidden mb-4 border-4 border-primary/10 group-hover:border-accent transition-colors duration-300">
+                  <Image
+                    src={leader.image}
+                    alt={leader.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors">
+                  {leader.name}
+                </h3>
+                <span className="text-sm text-accent-dark font-semibold mt-1">
+                  {leader.role}
+                </span>
+                <p className="text-xs text-gray-600 mt-2 max-w-xs">
+                  {leader.affiliation}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <SectionHeading title="Honorary Chairs" />
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
+            {honoraryLeadership.map((leader) => (
+              <div
+                key={leader.name}
+                className="bg-white rounded-2xl border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 p-6 flex flex-col items-center text-center group"
+              >
+                <div className="relative w-36 h-36 rounded-full overflow-hidden mb-4 border-4 border-primary/10 group-hover:border-accent transition-colors duration-300">
+                  <Image
+                    src={leader.image}
+                    alt={leader.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors">
+                  {leader.name}
+                </h3>
+                <span className="text-sm text-accent-dark font-semibold mt-1">
+                  {leader.role}
+                </span>
+                <p className="text-xs text-gray-600 mt-2 max-w-xs">
+                  {leader.affiliation}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <SectionHeading title="General Chairs" />
+          
+          <div className="grid grid-cols-1 gap-8 mb-16 max-w-xs mx-auto">
+            {generalLeadership.map((leader) => (
+              <div
+                key={leader.name}
+                className="bg-white rounded-2xl border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 p-6 flex flex-col items-center text-center group"
+              >
+                <div className="relative w-36 h-36 rounded-full overflow-hidden mb-4 border-4 border-primary/10 group-hover:border-accent transition-colors duration-300">
+                  <Image
+                    src={leader.image}
+                    alt={leader.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors">
+                  {leader.name}
+                </h3>
+                <span className="text-sm text-accent-dark font-semibold mt-1">
+                  {leader.role}
+                </span>
+                <p className="text-xs text-gray-600 mt-2 max-w-xs">
+                  {leader.affiliation}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <SectionHeading title="Patrons & Organizing Committee" />
+          <div className="mb-16">
+            <CommitteeTable title="Patrons & Organizing Committee" members={organizingCommittee} showRole />
+          </div>
+
+          <SectionHeading title="Honorary Chairs" />
+          <div className="mb-16">
+            <CommitteeTable title="Honorary Chairs" members={honoraryChairs} showRole />
+          </div>
+
+          <SectionHeading title="General Chairs" />
+          <div className="mb-16">
+            <CommitteeTable title="General Chairs" members={generalChairs} showRole />
+          </div>
+
+          <SectionHeading title="Technical Programme Committee" />
+          <div className="mb-16">
+            <CommitteeTable title="Technical Programme Committee Chairs" members={tpcChairs} showRole />
+          </div>
+
+          <SectionHeading title="Other Conference Committees" />
+          <div className="space-y-12 mb-16">
+            <CommitteeTable title="Finance Chairs" members={financeChairs} showRole />
+            <CommitteeTable title="Industry Chairs" members={industryChairs} showRole />
+            <CommitteeTable title="Publication Chairs" members={publicationChairs} showRole />
+            <CommitteeTable title="Women in Engineering (WIE) Chairs" members={womenInEngineeringChairs} showRole />
+            <CommitteeTable title="Hospitality & Logistics Chairs" members={hospitalityChairs} showRole />
+          </div>
+
+          <SectionHeading title="Local Organizing Committee" />
           <CommitteeTable title="Local Organizing Committee" members={localOrganizingCommittee} />
         </div>
       </section>
