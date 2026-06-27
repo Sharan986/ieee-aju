@@ -1,12 +1,12 @@
-"use client";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import type { Metadata } from "next";
 
-import SectionHeading from "../components/SectionHeading";
-import { FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
-import { useState } from "react";
+export const metadata: Metadata = {
+  title: "Contact Us | JHICON-2027",
+  description: "Get in touch with the organizing committee of the 1st Jharkhand International Conference (JHICON-2027) at Arka Jain University.",
+};
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
-
   return (
     <>
       <section className="bg-linear-to-r from-primary to-primary-dark py-16 text-white">
@@ -18,157 +18,83 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-gray-50/50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div>
-              <SectionHeading title="Send us a Message" />
-              {submitted ? (
-                <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
-                  <div className="w-16 h-16 mx-auto rounded-full bg-green-100 flex items-center justify-center mb-4">
-                    <FaPaperPlane className="text-green-600 text-xl" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            {/* Contact Info Card */}
+            <div className="bg-white rounded-2xl border border-gray-200/60 shadow-xs p-8 sm:p-10 flex flex-col justify-between">
+              <div>
+                <h2 className="text-2xl font-bold text-foreground mb-3">Get in Touch</h2>
+                <p className="text-sm text-gray-500 mb-8 leading-relaxed">
+                  For inquiries regarding paper submissions, registration, sponsorship, or general information about JHICON-2027, please reach out to us at the addresses below.
+                </p>
+
+                <div className="space-y-8">
+                  {/* Venue Address */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center shrink-0 text-primary border border-primary/10">
+                      <FaMapMarkerAlt className="text-xl" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground text-base">Venue Address</h3>
+                      <p className="text-sm text-gray-600 mt-1.5 leading-relaxed">
+                        Arka Jain University<br />
+                        NH-33, Gamharia<br />
+                        Seraikela-Kharsawan, Jharkhand 832108<br />
+                        India
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="font-bold text-green-800 text-lg">Message Sent!</h3>
-                  <p className="text-sm text-green-700 mt-2">
-                    Thank you for reaching out. We&apos;ll get back to you soon.
-                  </p>
-                  <button
-                    onClick={() => setSubmitted(false)}
-                    className="mt-4 text-sm text-primary font-medium hover:text-accent transition-colors"
-                  >
-                    Send another message
-                  </button>
+
+                  {/* Emails */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center shrink-0 text-primary border border-primary/10">
+                      <FaEnvelope className="text-xl" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground text-base">Email Contact</h3>
+                      <div className="text-sm text-gray-600 mt-1.5 flex flex-col gap-2">
+                        <a
+                          href="mailto:jhicon.ieee@arkajainuniversity.ac.in"
+                          className="break-all font-medium hover:text-accent transition-colors"
+                        >
+                          jhicon.ieee@arkajainuniversity.ac.in
+                        </a>
+                        <a
+                          href="mailto:dr.ashwini@arkajainuniversity.ac.in"
+                          className="break-all font-medium hover:text-accent transition-colors"
+                        >
+                          dr.ashwini@arkajainuniversity.ac.in
+                        </a>
+                        <a
+                          href="mailto:dr.aditya@arkajainuniversity.ac.in"
+                          className="break-all font-medium hover:text-accent transition-colors"
+                        >
+                          dr.aditya@arkajainuniversity.ac.in
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              ) : (
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    setSubmitted(true);
-                  }}
-                  className="space-y-5"
-                >
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
-                        placeholder="Your full name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">
-                        Email Address
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
-                        placeholder="your@email.com"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-1">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      required
-                      className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
-                      placeholder="What is this about?"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={5}
-                      className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-none"
-                      placeholder="Your message..."
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-accent text-primary-dark font-bold text-sm hover:bg-accent-light transition-colors"
-                  >
-                    <FaPaperPlane /> Send Message
-                  </button>
-                </form>
-              )}
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-gray-100 text-xs text-gray-400">
+                Official Correspondence of the 1st Jharkhand International Conference (JHICON-2027)
+              </div>
             </div>
 
-            {/* Contact Info */}
-            <div>
-              <SectionHeading title="Get in Touch" />
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <FaMapMarkerAlt className="text-primary text-lg" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground">Address</h3>
-                    <p className="text-sm text-gray-600 mt-1">
-                      Arka Jain University<br />
-                      NH-33, Gamharia<br />
-                      Seraikela-Kharsawan, Jharkhand 832108<br />
-                      India
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <FaEnvelope className="text-primary text-lg" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground">Email</h3>
-                    <div className="text-sm text-gray-600 hover:text-accent transition-colors mt-1 flex flex-col gap-1">
-                      <a
-                        href="mailto:jhicon.ieee@arkajainuniversity.ac.in"
-                        className="break-all"
-                      >
-                        jhicon.ieee@arkajainuniversity.ac.in
-                      </a>
-                      <a
-                        href="mailto:dr.aditya@arkajainuniversity.ac.in"
-                        className="break-all"
-                      >
-                        dr.aditya@arkajainuniversity.ac.in
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              {/* Map */}
-              <div className="mt-8 rounded-xl overflow-hidden border border-gray-200 shadow-sm min-h-[400px]">
-                <iframe
-                  title="Arka Jain University Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9814.013552989769!2d86.09872055973601!3d22.839245776231312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e5f1b496777f%3A0x1d506033b3ed835d!2sARKA%20JAIN%20UNIVERSITY%20CAMPUS!5e0!3m2!1sen!2sin!4v1772993512424!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, minHeight: 400 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
+            {/* Map Card */}
+            <div className="rounded-2xl overflow-hidden border border-gray-200/80 shadow-xs h-[450px] lg:h-auto min-h-[400px]">
+              <iframe
+                title="Arka Jain University Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9814.013552989769!2d86.09872055973601!3d22.839245776231312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e5f1b496777f%3A0x1d506033b3ed835d!2sARKA%20JAIN%20UNIVERSITY%20CAMPUS!5e0!3m2!1sen!2sin!4v1772993512424!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>

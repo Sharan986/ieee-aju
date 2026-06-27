@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 // TODO: Replace with actual Google Form URL before going live
-const GOOGLE_FORM_URL = "#";
+const GOOGLE_FORM_URL = "https://forms.gle/mExaff6wb7spR9EU6";
 
 const feeRows = [
   {

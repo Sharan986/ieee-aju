@@ -14,19 +14,16 @@ interface CommitteeMember {
   image?: string;
 }
 
-const organizingCommittee: CommitteeMember[] = [
-  {
-    name: "Dr. Chenraj Roychand",
-    role: "Chancellor & Chief Patron",
-    affiliation: "Chancellor, AJU, Jharkhand",
-    image: "/committee/chenraj_roychand.jpg",
-  },
+const chiefPatrons: CommitteeMember[] = [
   {
     name: "Prof. (Dr.) Easwaran S. Iyer",
     role: "Chief Patron",
     affiliation: "Vice-Chancellor, AJU, Jharkhand",
     image: "/committee/easwaran_s_iyer.jpg",
   },
+];
+
+const patrons: CommitteeMember[] = [
   {
     name: "Dr. Amit Kumar Shrivastav",
     role: "Patron",
@@ -44,6 +41,9 @@ const organizingCommittee: CommitteeMember[] = [
     role: "Patron",
     affiliation: "Chairperson, AJU, Jharkhand",
   },
+];
+
+const coPatrons: CommitteeMember[] = [
   {
     name: "Mrs. Richa Garg",
     role: "Co-Patron",
@@ -57,7 +57,7 @@ const organizingCommittee: CommitteeMember[] = [
     image: "/committee/jasbir_singh_dhanjal.jpg",
   },
   {
-    name: "Dr. Arvind Kumar Pandey",
+    name: "Prof. (Dr.) Arvind Kumar Pandey",
     role: "Co-Patron",
     affiliation: "AJU, Jharkhand",
     image: "/committee/arvind_kumar_pandey.jpg",
@@ -346,7 +346,6 @@ const hospitalityChairs: CommitteeMember[] = [
 ];
 
 const localOrganizingCommittee: CommitteeMember[] = [
-  { name: "Dr. Shailendra Kumar", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Anup Kumar", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Chandraprabha Sahu", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Dilip Kumar", affiliation: "AJU, Jharkhand" },
@@ -410,110 +409,50 @@ function CommitteeTable({ title, members, showRole = false }: { title: string; m
   );
 }
 
-const organizingLeadership = [
-  {
-    name: "Dr. Chenraj Roychand",
-    role: "Chancellor & Chief Patron",
-    affiliation: "ARKA Jain University",
-    image: "/committee/chenraj_roychand.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Easwaran S. Iyer",
-    role: "Chief Patron",
-    affiliation: "Vice-Chancellor, AJU, Jharkhand",
-    image: "/committee/easwaran_s_iyer.jpg",
-  },
-  {
-    name: "Dr. Amit Kumar Shrivastav",
-    role: "Patron",
-    affiliation: "Registrar, AJU, Jharkhand",
-    image: "/committee/amit_kumar_shrivastav.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Angad Tiwari",
-    role: "Patron",
-    affiliation: "Pro-Vice Chancellor, AJU, Jharkhand",
-    image: "/committee/angad_tiwari.jpg",
-  },
-  {
-    name: "Mrs. Richa Garg",
-    role: "Co-Patron",
-    affiliation: "AJU, Jharkhand",
-    image: "/committee/richa_garg.jpg",
-  },
-  {
-    name: "Dr. Jasbir Singh Dhanjal",
-    role: "Co-Patron",
-    affiliation: "AJU, Jharkhand",
-    image: "/committee/jasbir_singh_dhanjal.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Arvind Kumar Pandey",
-    role: "Co-Patron",
-    affiliation: "AJU, Jharkhand",
-    image: "/committee/arvind_kumar_pandey.jpg",
-  },
-  {
-    name: "Dr. Ashwini Kumar",
-    role: "Co-Patron",
-    affiliation: "AJU, Jharkhand",
-    image: "/committee/ashwini_kumar.jpg",
-  },
-];
+function LeaderCard({ member }: { member: CommitteeMember }) {
+  const getInitials = (name: string) => {
+    const cleanName = name
+      .replace(/^(Prof\.\s*\(Dr\.\)|Prof\.|Dr\.|Mrs\.|Mr\.)/gi, "")
+      .trim();
+    const parts = cleanName.split(/\s+/).filter(Boolean);
+    if (parts.length === 0) return "?";
+    if (parts.length === 1) return parts[0].charAt(0).toUpperCase();
+    return (parts[0].charAt(0) + parts[parts.length - 1].charAt(0)).toUpperCase();
+  };
 
-const honoraryLeadership = [
-  {
-    name: "Prof. (Dr.) Narayana Prasad Padhy",
-    role: "Honorary Chair",
-    affiliation: "Director, MNIT, Jaipur",
-    image: "/committee/narayana_prasad_padhy.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Bidyadhar Subudhi",
-    role: "Honorary Chair",
-    affiliation: "Director, NIT, Warangal",
-    image: "/committee/bidyadhar_subudhi.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Ashok Kumar Pradhan",
-    role: "Honorary Chair",
-    affiliation: "IIT, Kharagpur",
-    image: "/committee/ashok_kumar_pradhan.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Bhim Singh",
-    role: "Honorary Chair",
-    affiliation: "ANRF National Science Chair, IIT, Delhi",
-    image: "/committee/bhim_singh.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Sanjeevikumar Padmanaban",
-    role: "Honorary Chair",
-    affiliation: "USN, Norway",
-    image: "/committee/sanjeev_padmanaban.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Tarikul Islam",
-    role: "Honorary Chair",
-    affiliation: "Jamia Millia Islamia, New Delhi",
-    image: "/committee/tarikul_islam.jpg",
-  },
-  {
-    name: "Prof. (Dr.) Brij Bhooshan Gupta",
-    role: "Honorary Chair",
-    affiliation: "Asia University, Taiwan",
-    image: "/committee/brij_bhooshan_gupta.jpg",
-  },
-];
-
-const generalLeadership = [
-  {
-    name: "Dr. Aditya Prasad Padhy",
-    role: "General Chair",
-    affiliation: "AJU, Jharkhand, India",
-    image: "/committee/aditya_prasad_padhy.jpg",
-  },
-];
+  return (
+    <div className="bg-white rounded-2xl border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 p-6 flex flex-col items-center text-center group h-full justify-between">
+      <div className="flex flex-col items-center w-full">
+        {member.image ? (
+          <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-primary/10 group-hover:border-accent transition-colors duration-300 shrink-0">
+            <Image
+              src={member.image}
+              alt={member.name}
+              fill
+              sizes="128px"
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        ) : (
+          <div className="w-32 h-32 rounded-full mb-4 border-4 border-primary/10 group-hover:border-accent bg-linear-to-br from-primary/5 to-primary/20 flex items-center justify-center text-primary font-extrabold text-3xl select-none group-hover:scale-105 transition-all duration-500 shrink-0">
+            {getInitials(member.name)}
+          </div>
+        )}
+        <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors line-clamp-2">
+          {member.name}
+        </h3>
+        {member.role && (
+          <span className="text-xs text-accent-dark font-bold tracking-wider uppercase mt-1.5 bg-accent/10 px-3 py-1 rounded-full">
+            {member.role}
+          </span>
+        )}
+      </div>
+      <p className="text-xs text-gray-500 mt-3 max-w-xs line-clamp-2">
+        {member.affiliation}
+      </p>
+    </div>
+  );
+}
 
 export default function CommitteePage() {
   return (
@@ -527,124 +466,95 @@ export default function CommitteePage() {
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading title="Organizing Committee Leadership" />
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
-            {organizingLeadership.map((leader) => (
-              <div
-                key={leader.name}
-                className="bg-white rounded-2xl border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 p-6 flex flex-col items-center text-center group"
-              >
-                <div className="relative w-36 h-36 rounded-full overflow-hidden mb-4 border-4 border-primary/10 group-hover:border-accent transition-colors duration-300">
-                  <Image
-                    src={leader.image}
-                    alt={leader.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors">
-                  {leader.name}
+          {/* Organizing Committee / Patrons Section */}
+          <div className="mb-20">
+            <SectionHeading
+              title="Organizing Committee"
+              subtitle="JHICON-2027 Patrons and Leadership"
+            />
+
+            <div className="space-y-16">
+              {/* Chief Patron */}
+              <div>
+                <h3 className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-6">
+                  Chief Patron
                 </h3>
-                <span className="text-sm text-accent-dark font-semibold mt-1">
-                  {leader.role}
-                </span>
-                <p className="text-xs text-gray-600 mt-2 max-w-xs">
-                  {leader.affiliation}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <SectionHeading title="Honorary Chairs" />
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
-            {honoraryLeadership.map((leader) => (
-              <div
-                key={leader.name}
-                className="bg-white rounded-2xl border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 p-6 flex flex-col items-center text-center group"
-              >
-                <div className="relative w-36 h-36 rounded-full overflow-hidden mb-4 border-4 border-primary/10 group-hover:border-accent transition-colors duration-300">
-                  <Image
-                    src={leader.image}
-                    alt={leader.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                <div className="flex justify-center">
+                  <div className="w-full max-w-xs">
+                    <LeaderCard member={chiefPatrons[0]} />
+                  </div>
                 </div>
-                <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors">
-                  {leader.name}
-                </h3>
-                <span className="text-sm text-accent-dark font-semibold mt-1">
-                  {leader.role}
-                </span>
-                <p className="text-xs text-gray-600 mt-2 max-w-xs">
-                  {leader.affiliation}
-                </p>
               </div>
-            ))}
-          </div>
 
-          <SectionHeading title="General Chairs" />
-          
-          <div className="grid grid-cols-1 gap-8 mb-16 max-w-xs mx-auto">
-            {generalLeadership.map((leader) => (
-              <div
-                key={leader.name}
-                className="bg-white rounded-2xl border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 p-6 flex flex-col items-center text-center group"
-              >
-                <div className="relative w-36 h-36 rounded-full overflow-hidden mb-4 border-4 border-primary/10 group-hover:border-accent transition-colors duration-300">
-                  <Image
-                    src={leader.image}
-                    alt={leader.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+              {/* Patrons */}
+              <div>
+                <h3 className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-6">
+                  Patrons
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center max-w-4xl mx-auto">
+                  {patrons.map((p) => (
+                    <LeaderCard key={p.name} member={p} />
+                  ))}
                 </div>
-                <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors">
-                  {leader.name}
-                </h3>
-                <span className="text-sm text-accent-dark font-semibold mt-1">
-                  {leader.role}
-                </span>
-                <p className="text-xs text-gray-600 mt-2 max-w-xs">
-                  {leader.affiliation}
-                </p>
               </div>
-            ))}
+
+              {/* Co-Patrons */}
+              <div>
+                <h3 className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-6">
+                  Co-Patrons
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                  {coPatrons.map((p) => (
+                    <LeaderCard key={p.name} member={p} />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
-          <SectionHeading title="Patrons & Organizing Committee" />
-          <div className="mb-16">
-            <CommitteeTable title="Patrons & Organizing Committee" members={organizingCommittee} showRole />
+          {/* General Chair Section */}
+          <div className="mb-20">
+            <SectionHeading title="General Chair" />
+            <div className="flex justify-center">
+              <div className="w-full max-w-xs">
+                <LeaderCard member={generalChairs[0]} />
+              </div>
+            </div>
           </div>
 
-          <SectionHeading title="Honorary Chairs" />
-          <div className="mb-16">
-            <CommitteeTable title="Honorary Chairs" members={honoraryChairs} showRole />
+          {/* Honorary Chairs Section */}
+          <div className="mb-20">
+            <SectionHeading title="Honorary Chairs" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              {honoraryChairs.map((hc) => (
+                <LeaderCard key={hc.name} member={hc} />
+              ))}
+            </div>
           </div>
 
-          <SectionHeading title="General Chairs" />
-          <div className="mb-16">
-            <CommitteeTable title="General Chairs" members={generalChairs} showRole />
-          </div>
-
-          <SectionHeading title="Technical Programme Committee" />
-          <div className="mb-16">
+          {/* Technical Programme Committee Section */}
+          <div className="mb-20">
+            <SectionHeading title="Technical Programme Committee" />
             <CommitteeTable title="Technical Programme Committee Chairs" members={tpcChairs} showRole />
           </div>
 
-          <SectionHeading title="Other Conference Committees" />
-          <div className="space-y-12 mb-16">
-            <CommitteeTable title="Finance Chairs" members={financeChairs} showRole />
-            <CommitteeTable title="Industry Chairs" members={industryChairs} showRole />
-            <CommitteeTable title="Publication Chairs" members={publicationChairs} showRole />
-            <CommitteeTable title="Women in Engineering (WIE) Chairs" members={womenInEngineeringChairs} showRole />
-            <CommitteeTable title="Hospitality & Logistics Chairs" members={hospitalityChairs} showRole />
+          {/* Other Conference Committees Section */}
+          <div className="mb-20">
+            <SectionHeading title="Other Conference Committees" />
+            <div className="space-y-12">
+              <CommitteeTable title="Finance Chairs" members={financeChairs} showRole />
+              <CommitteeTable title="Industry Chairs" members={industryChairs} showRole />
+              <CommitteeTable title="Publication Chairs" members={publicationChairs} showRole />
+              <CommitteeTable title="Women in Engineering (WIE) Chairs" members={womenInEngineeringChairs} showRole />
+              <CommitteeTable title="Hospitality & Logistics Chairs" members={hospitalityChairs} showRole />
+            </div>
           </div>
 
-          <SectionHeading title="Local Organizing Committee" />
-          <CommitteeTable title="Local Organizing Committee" members={localOrganizingCommittee} />
+          {/* Local Organizing Committee Section */}
+          <div>
+            <SectionHeading title="Local Organizing Committee" />
+            <CommitteeTable title="Local Organizing Committee" members={localOrganizingCommittee} />
+          </div>
         </div>
       </section>
     </>
