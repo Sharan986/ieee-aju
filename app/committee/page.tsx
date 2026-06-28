@@ -161,6 +161,19 @@ const generalChairs: CommitteeMember[] = [
   },
 ];
 
+const steeringCommittee: CommitteeMember[] = [
+  {
+    name: "Dr. Tridibesh Nag",
+    role: "Steering Committee Member",
+    affiliation: "Vice Chair, IEEE Kolkata Section",
+  },
+  {
+    name: "Dr. Susanta Ray",
+    role: "Steering Committee Member",
+    affiliation: "Secretary, IEEE Kolkata Section",
+  },
+];
+
 const tpcChairs: CommitteeMember[] = [
   {
     name: "Dr. Deepak Reddy Pullaguram",
@@ -337,11 +350,17 @@ const publicationChairs: CommitteeMember[] = [
 ];
 
 const womenInEngineeringChairs: CommitteeMember[] = [
+  { name: "Prof. (Dr.) Susmita Das", role: "WIE Chair", affiliation: "NIT, Rourkela" },
+  { name: "Dr. Himani Saini", role: "WIE Chair", affiliation: "ISRO, Bangalore" },
+  { name: "Dr. Kumari Namrata", role: "WIE Chair", affiliation: "NIT, Jamshedpur" },
   { name: "Dr. Susmita Kar", role: "WIE Chair", affiliation: "NIT, Rourkela" },
-  { name: "Dr. Keerti Rai", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Anupam Kumari", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Prof. Taniya Ghosh", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Prof. Sayantani De", role: "WIE Chair", affiliation: "AJU, Jharkhand" },
+];
+
+const womenInEngineeringCoChairs: CommitteeMember[] = [
+  { name: "Dr. Keerti Rai", role: "WIE Co-Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Anupam Kumari", role: "WIE Co-Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Prof. Taniya Ghosh", role: "WIE Co-Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Prof. Sayantani De", role: "WIE Co-Chair", affiliation: "AJU, Jharkhand" },
 ];
 
 const hospitalityChairs: CommitteeMember[] = [
@@ -546,6 +565,12 @@ export default function CommitteePage() {
             </div>
           </div>
 
+          {/* Steering Committee Section */}
+          <div className="mb-20">
+            <SectionHeading title="Steering Committee" />
+            <CommitteeTable title="Steering Committee" members={steeringCommittee} />
+          </div>
+
           {/* Technical Programme Committee Section */}
           <div className="mb-20">
             <SectionHeading title="Technical Programme Committee" />
@@ -560,6 +585,7 @@ export default function CommitteePage() {
               <CommitteeTable title="Industry Chairs" members={industryChairs} />
               <CommitteeTable title="Publication Chairs" members={publicationChairs} />
               <CommitteeTable title="Women in Engineering (WIE) Chairs" members={womenInEngineeringChairs} />
+              <CommitteeTable title="Women in Engineering (WIE) Co-Chairs" members={womenInEngineeringCoChairs} />
               <CommitteeTable title="Hospitality & Logistics Chairs" members={hospitalityChairs} />
             </div>
           </div>
