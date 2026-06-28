@@ -34,7 +34,7 @@ const patrons: CommitteeMember[] = [
     name: "Prof. (Dr.) Angad Tiwari",
     role: "Patron",
     affiliation: "Pro-Vice Chancellor, AJU, Jharkhand",
-    image: "/committee/angad_tiwari.jpg",
+    image: "/committee/angad_tiwari.png",
   },
   {
     name: "Prof. (Dr.) S. S Razi",
@@ -448,11 +448,16 @@ function LeaderCard({ member }: { member: CommitteeMember }) {
         <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors line-clamp-2">
           {member.name}
         </h3>
-        {member.role && (
-          <span className="text-xs text-accent-dark font-bold tracking-wider uppercase mt-1.5 bg-accent/10 px-3 py-1 rounded-full">
-            {member.role}
-          </span>
-        )}
+        {member.role &&
+          member.role !== "Patron" &&
+          member.role !== "Co-Patron" &&
+          member.role !== "Chief Patron" &&
+          member.role !== "Honorary Chair" &&
+          member.role !== "General Chair" && (
+            <span className="text-xs text-accent-dark font-bold tracking-wider uppercase mt-1.5 bg-accent/10 px-3 py-1 rounded-full">
+              {member.role}
+            </span>
+          )}
       </div>
       <p className="text-xs text-gray-500 mt-3 max-w-xs line-clamp-2">
         {member.affiliation}
@@ -516,6 +521,18 @@ export default function CommitteePage() {
                   ))}
                 </div>
               </div>
+
+              {/* Honorary Chairs */}
+              <div>
+                <h3 className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-6">
+                  Honorary Chairs
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                  {honoraryChairs.map((hc) => (
+                    <LeaderCard key={hc.name} member={hc} />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -526,16 +543,6 @@ export default function CommitteePage() {
               <div className="w-full max-w-xs">
                 <LeaderCard member={generalChairs[0]} />
               </div>
-            </div>
-          </div>
-
-          {/* Honorary Chairs Section */}
-          <div className="mb-20">
-            <SectionHeading title="Honorary Chairs" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              {honoraryChairs.map((hc) => (
-                <LeaderCard key={hc.name} member={hc} />
-              ))}
             </div>
           </div>
 
