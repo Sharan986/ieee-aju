@@ -24,11 +24,16 @@ export default function CountdownTimer({ targetDate }: { targetDate: Date }) {
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
   useEffect(() => {
-    setTimeLeft(calculateTimeLeft(targetDate));
-    const timer = setInterval(() => {
+    const initialTimer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft(targetDate));
+    }, 0);
+    const intervalTimer = setInterval(() => {
       setTimeLeft(calculateTimeLeft(targetDate));
     }, 1000);
-    return () => clearInterval(timer);
+    return () => {
+      clearTimeout(initialTimer);
+      clearInterval(intervalTimer);
+    };
   }, [targetDate]);
 
   if (!timeLeft) {
