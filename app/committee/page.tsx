@@ -130,11 +130,13 @@ const honoraryChairs: CommitteeMember[] = [
     name: "Prof. (Dr.) Sidhartha Panda",
     role: "Honorary Chair",
     affiliation: "VSSUT, Burla",
+    image: "/committee/sidhartha_panda.png",
   },
   {
     name: "Prof. (Dr.) Ajit Kumar Barisal",
     role: "Honorary Chair",
     affiliation: "OUTR, Bhubaneswar",
+    image: "/committee/ajit_kumar_barisal.png",
   },
   {
     name: "Prof. (Dr.) Tarikul Islam",
