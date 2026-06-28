@@ -40,6 +40,7 @@ const patrons: CommitteeMember[] = [
     name: "Prof. (Dr.) S. S Razi",
     role: "Patron",
     affiliation: "Chairperson, AJU, Jharkhand",
+    image: "/committee/ss_razi.png",
   },
 ];
 
@@ -93,6 +94,7 @@ const honoraryChairs: CommitteeMember[] = [
     name: "Prof. (Dr.) Aurobinda Routray",
     role: "Honorary Chair",
     affiliation: "IIT, Kharagpur",
+    image: "/committee/aurobinda_routray.png",
   },
   {
     name: "Prof. (Dr.) Bhim Singh",
@@ -110,11 +112,13 @@ const honoraryChairs: CommitteeMember[] = [
     name: "Prof. (Dr.) Chandan Chakraborty",
     role: "Honorary Chair",
     affiliation: "IIT, Kharagpur",
+    image: "/committee/chandan_chakraborty.png",
   },
   {
     name: "Prof. (Dr.) Xiaodong Liang",
     role: "Honorary Chair",
     affiliation: "University of Saskatchewan, Canada",
+    image: "/committee/xiaodong_liang.png",
   },
   {
     name: "Prof. (Dr.) Brij Bhooshan Gupta",
@@ -142,6 +146,7 @@ const honoraryChairs: CommitteeMember[] = [
     name: "Prof. (Dr.) Chinmoy Panigrahi",
     role: "Honorary Chair",
     affiliation: "KIIT University, Bhubaneswar",
+    image: "/committee/chinmoy_panigrahi.png",
   },
 ];
 
@@ -535,18 +540,18 @@ export default function CommitteePage() {
           {/* Technical Programme Committee Section */}
           <div className="mb-20">
             <SectionHeading title="Technical Programme Committee" />
-            <CommitteeTable title="Technical Programme Committee Chairs" members={tpcChairs} showRole />
+            <CommitteeTable title="Technical Programme Committee Chairs" members={tpcChairs} />
           </div>
 
           {/* Other Conference Committees Section */}
           <div className="mb-20">
             <SectionHeading title="Other Conference Committees" />
             <div className="space-y-12">
-              <CommitteeTable title="Finance Chairs" members={financeChairs} showRole />
-              <CommitteeTable title="Industry Chairs" members={industryChairs} showRole />
-              <CommitteeTable title="Publication Chairs" members={publicationChairs} showRole />
-              <CommitteeTable title="Women in Engineering (WIE) Chairs" members={womenInEngineeringChairs} showRole />
-              <CommitteeTable title="Hospitality & Logistics Chairs" members={hospitalityChairs} showRole />
+              <CommitteeTable title="Finance Chairs" members={financeChairs} />
+              <CommitteeTable title="Industry Chairs" members={industryChairs} />
+              <CommitteeTable title="Publication Chairs" members={publicationChairs} />
+              <CommitteeTable title="Women in Engineering (WIE) Chairs" members={womenInEngineeringChairs} />
+              <CommitteeTable title="Hospitality & Logistics Chairs" members={hospitalityChairs} />
             </div>
           </div>
 
