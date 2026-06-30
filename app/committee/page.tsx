@@ -155,24 +155,26 @@ const honoraryChairs: CommitteeMember[] = [
 const generalChairs: CommitteeMember[] = [
   {
     name: "Dr. Aditya Prasad Padhy",
-    role: "General Chair",
+    role: "",
     affiliation: "AJU, Jharkhand, India",
     image: "/committee/aditya_prasad_padhy.jpg",
   },
 ];
 
-const steeringCommittee: CommitteeMember[] = [
+const coOrganizingChairs: CommitteeMember[] = [
   {
-    name: "Dr. Tridibesh Nag",
-    role: "Steering Committee Member",
-    affiliation: "Vice Chair, IEEE Kolkata Section",
+    name: "Dr. Veerpratap Meena",
+    role: "Co-Organizing Chair",
+    affiliation: "NIT, Jamshedpur",
   },
   {
-    name: "Dr. Susanta Ray",
-    role: "Steering Committee Member",
-    affiliation: "Secretary, IEEE Kolkata Section",
+    name: "Dr. Nidhi Dua",
+    role: "Co-Organizing Chair",
+    affiliation: "AJU, Jharkhand",
   },
 ];
+
+const steeringCommittee: CommitteeMember[] = [];
 
 const tpcChairs: CommitteeMember[] = [
   {
@@ -276,16 +278,6 @@ const tpcChairs: CommitteeMember[] = [
     affiliation: "MNNIT, Prayagraj",
   },
   {
-    name: "Dr. Tridibesh Nag",
-    role: "Technical Programme Committee Chair",
-    affiliation: "Vice Chair, IEEE Kolkata section",
-  },
-  {
-    name: "Dr. Susanta Ray",
-    role: "Technical Programme Committee Chair",
-    affiliation: "Secretary, IEEE Kolkata section",
-  },
-  {
     name: "Dr. Pavan kumar Meena",
     role: "Technical Programme Committee Chair",
     affiliation: "GUT, Poland",
@@ -339,7 +331,6 @@ const industryChairs: CommitteeMember[] = [
 ];
 
 const publicationChairs: CommitteeMember[] = [
-  { name: "Dr. Veerpratap Meena", role: "Publication Chair", affiliation: "NIT, Jamshedpur" },
   { name: "Dr. Gajendra Kant Mishra", role: "Publication Chair", affiliation: "BIT, Mesra" },
   { name: "Prof. (Dr.) Sonia Riyat", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Shailesh Kumar", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
@@ -369,6 +360,11 @@ const hospitalityChairs: CommitteeMember[] = [
   { name: "Prof. Aditi Keshari", role: "Hospitality & Logistics Chair", affiliation: "AJU, Jharkhand" },
   { name: "Prof. Sarita Srivastav", role: "Hospitality & Logistics Chair", affiliation: "AJU, Jharkhand" },
   { name: "Prof. Manjur Ansari", role: "Hospitality & Logistics Chair", affiliation: "AJU, Jharkhand" },
+];
+
+const webMediaChairs: CommitteeMember[] = [
+  { name: "Gursharan Singh", role: "Web & Media Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Sumit kr. Singh", role: "Web & Media Chair", affiliation: "AJU, Jharkhand" },
 ];
 
 const localOrganizingCommittee: CommitteeMember[] = [
@@ -557,7 +553,7 @@ export default function CommitteePage() {
 
           {/* General Chair Section */}
           <div className="mb-20">
-            <SectionHeading title="General Chair" />
+            <SectionHeading title="Organizing Chair" />
             <div className="flex justify-center">
               <div className="w-full max-w-xs">
                 <LeaderCard member={generalChairs[0]} />
@@ -565,11 +561,33 @@ export default function CommitteePage() {
             </div>
           </div>
 
-          {/* Steering Committee Section */}
+          {/* Co-Organizing Chairs Section */}
           <div className="mb-20">
-            <SectionHeading title="Steering Committee" />
-            <CommitteeTable title="Steering Committee" members={steeringCommittee} />
+            <SectionHeading title="Co-Organizing Chairs" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              {coOrganizingChairs.map((member) => (
+                <LeaderCard key={member.name} member={member} />
+              ))}
+            </div>
           </div>
+
+          {/* Web & Media Chairs Section */}
+          <div className="mb-20">
+            <SectionHeading title="Web & Media Chairs" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              {webMediaChairs.map((member) => (
+                <LeaderCard key={member.name} member={member} />
+              ))}
+            </div>
+          </div>
+
+          {/* Steering Committee Section */}
+          {steeringCommittee.length > 0 && (
+            <div className="mb-20">
+              <SectionHeading title="Steering Committee" />
+              <CommitteeTable title="Steering Committee" members={steeringCommittee} />
+            </div>
+          )}
 
           {/* Technical Programme Committee Section */}
           <div className="mb-20">
