@@ -11,51 +11,29 @@ export const metadata: Metadata = {
 
 const tracks = [
   {
-    title: "Electrical Engineering & Power Systems",
+    title: "Track 1: Power System & Smart Grid",
     topics: [
       "Power System Analysis & Protection",
-      "High Voltage Engineering",
-      "Electrical Machines & Drives",
-      "Power Electronics & Converters",
-      "Smart Grid Technologies",
-      "Energy Storage Systems",
+      "High Voltage Engineering & Insulation",
+      "Smart Grid Technologies & Microgrids",
+      "Power Quality & Mitigation Technologies",
+      "Power System Dynamics, Control & Stability",
+      "Distributed Generation & Grid Integration",
     ],
   },
   {
-    title: "Signal Processing & Communications",
+    title: "Track 2: Power Electronics & Drives",
     topics: [
-      "Digital Signal Processing",
-      "Image & Video Processing",
-      "Speech & Audio Processing",
-      "Wireless Communication Systems",
-      "5G/6G Networks",
-      "Radar & Sonar Systems",
+      "Power Electronic Converters",
+      "Electric Drives and Motor Control",
+      "Renewable Energy Power Electronics",
+      "Energy Storage Systems and Battery Technologies",
+      "Smart Grid and Microgrid Power Electronics",
+      "Control Techniques for Power Electronic Systems",
     ],
   },
   {
-    title: "VLSI & Embedded Systems",
-    topics: [
-      "VLSI Design & Testing",
-      "System-on-Chip (SoC) Design",
-      "FPGA-based Systems",
-      "Embedded System Design",
-      "Low-Power Circuit Design",
-      "Hardware Security",
-    ],
-  },
-  {
-    title: "Advanced Computing & AI",
-    topics: [
-      "Machine Learning & Deep Learning",
-      "Cloud & Edge Computing",
-      "High Performance Computing",
-      "Natural Language Processing",
-      "Computer Vision",
-      "Blockchain Technologies",
-    ],
-  },
-  {
-    title: "Renewable Energy & Sustainable Development",
+    title: "Track 3: Renewable Energy & Sustainable Development",
     topics: [
       "Solar & Wind Energy Systems",
       "Micro-grid & Distributed Generation",
@@ -66,7 +44,41 @@ const tracks = [
     ],
   },
   {
-    title: "IoT, Robotics & Automation",
+    title: "Track 4: Signal Processing, Sensing & Communications",
+    topics: [
+      "Digital Signal Processing",
+      "Image & Video Processing",
+      "Speech & Audio Processing",
+      "Wireless Communication Systems",
+      "5G/6G Networks",
+      "Sensing & Sensor Technologies",
+      "Radar & Sonar Systems",
+    ],
+  },
+  {
+    title: "Track 5: Applied AI & Advanced Computing",
+    topics: [
+      "Machine Learning & Deep Learning",
+      "Cloud & Edge Computing",
+      "High Performance Computing",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Blockchain Technologies",
+    ],
+  },
+  {
+    title: "Track 6: VLSI & Embedded Systems",
+    topics: [
+      "VLSI Design & Testing",
+      "System-on-Chip (SoC) Design",
+      "FPGA-based Systems",
+      "Embedded System Design",
+      "Low-Power Circuit Design",
+      "Hardware Security",
+    ],
+  },
+  {
+    title: "Track 7: IoT, Robotics & Automation",
     topics: [
       "Internet of Things (IoT) Applications",
       "Industrial Automation & Control",
