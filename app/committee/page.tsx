@@ -167,11 +167,6 @@ const coOrganizingChairs: CommitteeMember[] = [
     role: "Co-Organizing Chair",
     affiliation: "NIT, Jamshedpur",
   },
-  {
-    name: "Dr. Nidhi Dua",
-    role: "Co-Organizing Chair",
-    affiliation: "AJU, Jharkhand",
-  },
 ];
 
 const steeringCommittee: CommitteeMember[] = [];
@@ -564,9 +559,11 @@ export default function CommitteePage() {
           {/* Co-Organizing Chairs Section */}
           <div className="mb-20">
             <SectionHeading title="Co-Organizing Chairs" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto">
               {coOrganizingChairs.map((member) => (
-                <LeaderCard key={member.name} member={member} />
+                <div key={member.name} className="w-full max-w-xs">
+                  <LeaderCard member={member} />
+                </div>
               ))}
             </div>
           </div>
