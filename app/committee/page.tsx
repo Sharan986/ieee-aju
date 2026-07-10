@@ -159,6 +159,12 @@ const generalChairs: CommitteeMember[] = [
     affiliation: "AJU, Jharkhand, India",
     image: "/committee/aditya_prasad_padhy.jpg",
   },
+  {
+    name: "Dr. Deepak Reddy Pullaguram",
+    role: "",
+    affiliation: "IIT, Kharagpur",
+    image: "/committee/deepak_reddy_pullaguram.png",
+  },
 ];
 
 const coOrganizingChairs: CommitteeMember[] = [
@@ -166,6 +172,7 @@ const coOrganizingChairs: CommitteeMember[] = [
     name: "Dr. Veerpratap Meena",
     role: "Co-Organizing Chair",
     affiliation: "NIT, Jamshedpur",
+    image: "/committee/veerpratap_meena.png",
   },
 ];
 
@@ -176,6 +183,7 @@ const tpcChairs: CommitteeMember[] = [
     name: "Dr. Deepak Reddy Pullaguram",
     role: "Technical Programme Committee Chair",
     affiliation: "IIT, Kharagpur",
+    image: "/committee/deepak_reddy_pullaguram.png",
   },
   {
     name: "Dr. Paresh Kumar Nayak",
@@ -329,7 +337,6 @@ const publicationChairs: CommitteeMember[] = [
   { name: "Dr. Gajendra Kant Mishra", role: "Publication Chair", affiliation: "BIT, Mesra" },
   { name: "Prof. (Dr.) Sonia Riyat", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Shailesh Kumar", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Nidhi Dua", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Md Irfan Ahmed", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Amit Prakash Sen", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Binod Kumar Choudhary", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
@@ -549,10 +556,12 @@ export default function CommitteePage() {
           {/* General Chair Section */}
           <div className="mb-20">
             <SectionHeading title="Organizing Chair" />
-            <div className="flex justify-center">
-              <div className="w-full max-w-xs">
-                <LeaderCard member={generalChairs[0]} />
-              </div>
+            <div className="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto">
+              {generalChairs.map((member, index) => (
+                <div key={`${member.name}-${index}`} className="w-full max-w-xs">
+                  <LeaderCard member={member} />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -560,8 +569,8 @@ export default function CommitteePage() {
           <div className="mb-20">
             <SectionHeading title="Co-Organizing Chairs" />
             <div className="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto">
-              {coOrganizingChairs.map((member) => (
-                <div key={member.name} className="w-full max-w-xs">
+              {coOrganizingChairs.map((member, index) => (
+                <div key={`${member.name}-${index}`} className="w-full max-w-xs">
                   <LeaderCard member={member} />
                 </div>
               ))}
