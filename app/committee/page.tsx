@@ -169,10 +169,20 @@ const generalChairs: CommitteeMember[] = [
 
 const coOrganizingChairs: CommitteeMember[] = [
   {
+    name: "Dr. Kasinath Jena",
+    role: "Co-Organizing Chair",
+    affiliation: "AJU, Jharkhand",
+  },
+  {
+    name: "Dr. Dushyant Sharma",
+    role: "Co-Organizing Chair",
+    affiliation: "IIT, Dhanbad",
+    image: "/committee/co_organizing_chair_tbd.png",
+  },
+  {
     name: "Dr. Veerpratap Meena",
     role: "Co-Organizing Chair",
     affiliation: "NIT, Jamshedpur",
-    image: "/committee/veerpratap_meena.png",
   },
 ];
 
