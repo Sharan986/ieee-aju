@@ -9,33 +9,33 @@ export const metadata: Metadata = {
 
 const timeline = [
   {
-    date: "October 15, 2026",
+    date: "June 15, 2026",
+    title: "Paper Submission Opens",
+    description: "Submission portal opens for original and unpublished research papers.",
+    status: "upcoming" as const,
+  },
+  {
+    date: "September 15, 2026",
     title: "Paper Submission Deadline",
     description: "Submit your full paper via the online submission system.",
     status: "upcoming" as const,
   },
   {
-    date: "November 20, 2026",
+    date: "October 15, 2026",
     title: "Acceptance Notification",
     description: "Authors will be notified of the review decision.",
     status: "upcoming" as const,
   },
   {
-    date: "December 10, 2026",
-    title: "Camera-Ready Submission",
+    date: "November 15, 2026",
+    title: "Camera-Ready Paper",
     description: "Submit the final version of your accepted paper with all revisions.",
     status: "upcoming" as const,
   },
   {
     date: "December 15, 2026",
-    title: "Submission of Final Manuscript & Copyright",
-    description: "Submit final manuscript along with IEEE copyright form.",
-    status: "upcoming" as const,
-  },
-  {
-    date: "January 10, 2027",
-    title: "Registration Deadline",
-    description: "At least one author per accepted paper must register.",
+    title: "Early Bird Registration",
+    description: "Avail discounted registration rates before the deadline.",
     status: "upcoming" as const,
   },
   {

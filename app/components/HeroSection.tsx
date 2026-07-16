@@ -23,7 +23,7 @@ export default function HeroSection() {
         <div className="text-center">
           {/* IEEE Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-sm mb-6">
-            <span className="font-semibold text-accent">JHICON </span>
+            <span className="font-semibold text-accent">IEEE JHICON </span>
             <span className="text-white/70">2027</span>
           </div>
 

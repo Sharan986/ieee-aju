@@ -14,39 +14,44 @@ const GOOGLE_FORM_URL = "https://forms.gle/mExaff6wb7spR9EU6";
 
 const feeRows = [
   {
-    category: "Students (UG/PG/PhD)",
-    india: ["INR 6000", "INR 6500", "INR 7000", "INR 7500"],
-    abroad: ["USD 100", "USD 125", "USD 150", "USD 175"],
+    category: "Author: Students",
+    india: ["INR 5500", "INR 6000", "INR 6500", "INR 7000"],
+    abroad: ["USD 150", "USD 175", "USD 200", "USD 250"],
   },
   {
-    category: "Professional from Academia/Research Institute",
+    category: "Author: Academia",
     india: ["INR 7000", "INR 7500", "INR 8000", "INR 8500"],
-    abroad: ["USD 200", "USD 225", "USD 250", "USD 275"],
+    abroad: ["USD 200", "USD 225", "USD 250", "USD 300"],
   },
   {
-    category: "Professional from the Industry",
+    category: "Author: Industry",
     india: ["INR 8500", "INR 9000", "INR 9500", "INR 10000"],
-    abroad: ["USD 250", "USD 275", "USD 300", "USD 325"],
+    abroad: ["USD 250", "USD 275", "USD 300", "USD 350"],
   },
   {
-    category: "Attendee (Student/Academia/Industry)",
-    india: ["INR 1200", "INR 1500", "INR 1800", "INR 2100"],
-    abroad: ["USD 50", "USD 75", "USD 100", "USD 125"],
+    category: "Attendee (Student)",
+    india: ["INR 1000", "INR 1500", "INR 2000", "INR 2500"],
+    abroad: ["USD 50", "USD 75", "USD 100", "USD 150"],
+  },
+  {
+    category: "Attendee (Academia / Industry)",
+    india: ["INR 2000", "INR 2500", "INR 3000", "INR 3500"],
+    abroad: ["USD 75", "USD 100", "USD 125", "USD 175"],
   },
 ] as const;
 
 const indiaColumns = [
-  "IEEE (Virtual Mode)",
-  "IEEE (Physical Mode)",
-  "Non-IEEE (Virtual Mode)",
-  "Non-IEEE (Physical Mode)",
+  "IEEE\n(Virtual Mode)",
+  "IEEE\n(Physical Mode)",
+  "Non-IEEE\n(Virtual Mode)",
+  "Non-IEEE\n(Physical Mode)",
 ];
 
 const abroadColumns = [
-  "IEEE (Virtual Mode)",
-  "IEEE (Physical)",
-  "Non-IEEE (Virtual Mode)",
-  "Non-IEEE (Physical Mode)",
+  "IEEE\n(Virtual Mode)",
+  "IEEE\n(Physical)",
+  "Non-IEEE\n(Virtual Mode)",
+  "Non-IEEE\n(Physical Mode)",
 ];
 
 const bankDetails = [
