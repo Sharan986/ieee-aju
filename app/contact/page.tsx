@@ -61,10 +61,10 @@ export default function ContactPage() {
                           jhicon.ieee@arkajainuniversity.ac.in
                         </a>
                         <a
-                          href="mailto:dr.ashwini@arkajainuniversity.ac.in"
+                          href="mailto:dr.kasinath@arkajainuniversity.ac.in"
                           className="break-all font-medium hover:text-accent transition-colors"
                         >
-                          dr.ashwini@arkajainuniversity.ac.in
+                          dr.kasinath@arkajainuniversity.ac.in
                         </a>
                         <a
                           href="mailto:dr.aditya@arkajainuniversity.ac.in"

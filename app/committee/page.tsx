@@ -58,7 +58,7 @@ const coPatrons: CommitteeMember[] = [
     image: "/committee/jasbir_singh_dhanjal.jpg",
   },
   {
-    name: "Prof. (Dr.) Arvind Kumar Pandey",
+    name: "Dr. Arvind Kumar Pandey",
     role: "Co-Patron",
     affiliation: "AJU, Jharkhand",
     image: "/committee/arvind_kumar_pandey.jpg",
@@ -103,7 +103,7 @@ const honoraryChairs: CommitteeMember[] = [
     image: "/committee/bhim_singh.jpg",
   },
   {
-    name: "Prof. (Dr.) Sanjeevikumar Padmanaban",
+    name: "Prof. (Dr.) Sanjeev Padmanaban",
     role: "Honorary Chair",
     affiliation: "USN, Norway",
     image: "/committee/sanjeev_padmanaban.jpg",
@@ -155,13 +155,28 @@ const honoraryChairs: CommitteeMember[] = [
 const generalChairs: CommitteeMember[] = [
   {
     name: "Dr. Aditya Prasad Padhy",
-    role: "",
+    role: "Organizing Chair",
     affiliation: "AJU, Jharkhand, India",
     image: "/committee/aditya_prasad_padhy.jpg",
+  },
+  {
+    name: "Dr. Deepak Reddy Pullaguram",
+    role: "Organizing Chair",
+    affiliation: "IIT, Kharagpur",
   },
 ];
 
 const coOrganizingChairs: CommitteeMember[] = [
+  {
+    name: "Dr. Kasinath Jena",
+    role: "Co-Organizing Chair",
+    affiliation: "AJU, Jharkhand, India",
+  },
+  {
+    name: "Dr. Dushyant Sharma",
+    role: "Co-Organizing Chair",
+    affiliation: "IIT, Dhanbad",
+  },
   {
     name: "Dr. Veerpratap Meena",
     role: "Co-Organizing Chair",
@@ -172,146 +187,57 @@ const coOrganizingChairs: CommitteeMember[] = [
 const steeringCommittee: CommitteeMember[] = [];
 
 const tpcChairs: CommitteeMember[] = [
-  {
-    name: "Dr. Deepak Reddy Pullaguram",
-    role: "Technical Programme Committee Chair",
-    affiliation: "IIT, Kharagpur",
-  },
-  {
-    name: "Dr. Paresh Kumar Nayak",
-    role: "Technical Programme Committee Chair",
-    affiliation: "IIT Dhanbad",
-  },
-  {
-    name: "Dr. Dushyant Sharma",
-    role: "Technical Programme Committee Chair",
-    affiliation: "IIT, Dhanbad",
-  },
-  {
-    name: "Dr. Rabindra Mohanty",
-    role: "Technical Programme Committee Chair",
-    affiliation: "IIT, Delhi",
-  },
-  {
-    name: "Dr. Priyatosh Mahish",
-    role: "Technical Programme Committee Chair",
-    affiliation: "IIT Dhanbad",
-  },
-  {
-    name: "Dr. Ajit Kumar",
-    role: "Technical Programme Committee Chair",
-    affiliation: "IIT, Dhanbad",
-  },
-  {
-    name: "Dr. Vinay Pratap Singh",
-    role: "Technical Programme Committee Chair",
-    affiliation: "MNIT, Jaipur",
-  },
-  {
-    name: "Dr. Swapnajit Pattnaik",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Raipur",
-  },
-  {
-    name: "Dr. Monalisa Biswal",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Raipur",
-  },
-  {
-    name: "Dr. Varsha Singh",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Raipur",
-  },
-  {
-    name: "Dr. Kumari Namrata",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Jamshedpur",
-  },
-  {
-    name: "Dr. Basudeba Behera",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Jamshedpur",
-  },
-  {
-    name: "Dr. Wesam Ahmed",
-    role: "Technical Programme Committee Chair",
-    affiliation: "Hurghada University, Egypt",
-  },
-  {
-    name: "Dr. Dilip Kumar Mishra",
-    role: "Technical Programme Committee Chair",
-    affiliation: "Flinders University, Australia",
-  },
-  {
-    name: "Dr. Trilochanan Panigrahi",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Goa",
-  },
-  {
-    name: "Dr. Deepak Kumar Lal",
-    role: "Technical Programme Committee Chair",
-    affiliation: "VSSUT, Burla",
-  },
-  {
-    name: "Dr. Suryaprakash",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Jamshedpur",
-  },
-  {
-    name: "Dr. Dinesh Kumar",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Jamshedpur",
-  },
-  {
-    name: "Dr. Kethavath Raghavendra Naik",
-    role: "Technical Programme Committee Chair",
-    affiliation: "NIT, Jamshedpur",
-  },
-  {
-    name: "Dr. Saumendra Sarangi",
-    role: "Technical Programme Committee Chair",
-    affiliation: "MNNIT, Prayagraj",
-  },
-  {
-    name: "Dr. Pavan kumar Meena",
-    role: "Technical Programme Committee Chair",
-    affiliation: "GUT, Poland",
-  },
-  {
-    name: "Dr. Gajendra Kant Mishra",
-    role: "Technical Programme Committee Chair",
-    affiliation: "BIT, Mesra",
-  },
-  {
-    name: "Dr. Krishna Kumar Gupta",
-    role: "Technical Programme Committee Chair",
-    affiliation: "Thapar University, Punjab",
-  },
-  {
-    name: "Dr. Arghya Mitra",
-    role: "Technical Programme Committee Chair",
-    affiliation: "VNIT, Nagpur",
-  },
-  {
-    name: "Dr. M Suresh",
-    role: "Technical Programme Committee Chair",
-    affiliation: "VIT, Bhopal",
-  },
-  {
-    name: "Dr. Gesu Thakur",
-    role: "Technical Programme Committee Chair",
-    affiliation: "COER University, Roorkee",
-  },
-  {
-    name: "Dr. Kasinath Jena",
-    role: "Technical Programme Committee Chair",
-    affiliation: "AJU, Jharkhand, India",
-  },
-  {
-    name: "Dr. Jonaki Mukherjee",
-    role: "Technical Programme Committee Chair",
-    affiliation: "AJU, Jharkhand, India",
-  },
+  { name: "Dr. Paresh Kumar Nayak", role: "Technical Programme Committee Chair", affiliation: "IIT Dhanbad" },
+  { name: "Dr. Rabindra Mohanty", role: "Technical Programme Committee Chair", affiliation: "IIT, Delhi" },
+  { name: "Dr. Priyatosh Mahish", role: "Technical Programme Committee Chair", affiliation: "IIT Dhanbad" },
+  { name: "Dr. Ajit Kumar", role: "Technical Programme Committee Chair", affiliation: "IIT, Dhanbad" },
+  { name: "Dr. Vinay Pratap Singh", role: "Technical Programme Committee Chair", affiliation: "MNIT, Jaipur" },
+  { name: "Dr. Swapnajit Pattnaik", role: "Technical Programme Committee Chair", affiliation: "NIT, Raipur" },
+  { name: "Dr. Monalisa Biswal", role: "Technical Programme Committee Chair", affiliation: "NIT, Raipur" },
+  { name: "Dr. Varsha Singh", role: "Technical Programme Committee Chair", affiliation: "NIT, Raipur" },
+  { name: "Dr. Kumari Namrata", role: "Technical Programme Committee Chair", affiliation: "NIT, Jamshedpur" },
+  { name: "Dr. Basudeba Behera", role: "Technical Programme Committee Chair", affiliation: "NIT, Jamshedpur" },
+  { name: "Dr. Wesam Ahmed", role: "Technical Programme Committee Chair", affiliation: "Hurghada University, Egypt" },
+  { name: "Dr. Dilip Kumar Mishra", role: "Technical Programme Committee Chair", affiliation: "Flinders University, Australia" },
+  { name: "Dr. Trilochan Panigrahi", role: "Technical Programme Committee Chair", affiliation: "NIT, Goa" },
+  { name: "Dr. Deepak Kumar Lal", role: "Technical Programme Committee Chair", affiliation: "VSSUT, Burla" },
+  { name: "Dr. Suryaprakash", role: "Technical Programme Committee Chair", affiliation: "NIT, Jamshedpur" },
+  { name: "Dr. Dinesh Kumar", role: "Technical Programme Committee Chair", affiliation: "NIT, Jamshedpur" },
+  { name: "Dr. Kethavath Raghavendra Naik", role: "Technical Programme Committee Chair", affiliation: "NIT, Jamshedpur" },
+  { name: "Dr. Saumendra Sarangi", role: "Technical Programme Committee Chair", affiliation: "MNNIT, Prayagraj" },
+  { name: "Dr. Pavan kumar Meena", role: "Technical Programme Committee Chair", affiliation: "GUT, Poland" },
+  { name: "Dr. Gajendra Kant Mishra", role: "Technical Programme Committee Chair", affiliation: "BIT, Mesra" },
+  { name: "Dr. Krishna Kumar Gupta", role: "Technical Programme Committee Chair", affiliation: "Thapar University, Punjab" },
+  { name: "Dr. Arghya Mitra", role: "Technical Programme Committee Chair", affiliation: "VNIT, Nagpur" },
+  { name: "Dr. M Suresh", role: "Technical Programme Committee Chair", affiliation: "VIT, Bhopal" },
+  { name: "Dr. Shailesh Kumar", role: "Technical Programme Committee Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Kasinath Jena", role: "Technical Programme Committee Chair", affiliation: "AJU, Jharkhand, India" },
+];
+
+const internationalAdvisoryCommittee: CommitteeMember[] = [
+  { name: "Prof. (Dr.) Anurag K Srivastava", affiliation: "WVU, USA" },
+  { name: "Prof. (Dr.) Frede Blaabjerg", affiliation: "AU, Denmark" },
+  { name: "Dr. Shubham Kumar Sahu", affiliation: "AU, Denmark" },
+  { name: "Prof. (Dr.) Lalit Goel", affiliation: "NTU, Singapore" },
+  { name: "Prof. (Dr.) Tarlochan Sidhu", affiliation: "OTU, Canada" },
+  { name: "Prof. (Dr.) Samir Kouro", affiliation: "LIST, Luxembourg" },
+  { name: "Prof. (Dr.) Hamid Reza Shaker", affiliation: "UOS, Denmark" },
+  { name: "Prof. (Dr.) Muhammad Majid Gulzar", affiliation: "KFUPM, Saudi Arabia" },
+  { name: "Dr. Syed Muhammad Amrr", affiliation: "KFUPM, Saudi Arabia" },
+  { name: "Dr. Swatee Padhee", affiliation: "NCH, USA" },
+  { name: "Dr. Navid Bayati", affiliation: "UOS, Denmark" },
+];
+
+const nationalAdvisoryCommittee: CommitteeMember[] = [
+  { name: "Prof. (Dr.) Soumya Ranjan Mohanty", affiliation: "IIT, BHU" },
+  { name: "Dr. Ranjan Kumar Behere", affiliation: "IIT, Patna" },
+  { name: "Prof. (Dr.) Yogesh Vijay Hote", affiliation: "IIT, Roorkee" },
+  { name: "Prof. (Dr.) Partha Sharathi Mallick", affiliation: "VIT, Vellore" },
+  { name: "Prof. (Dr.) Subhojit Ghosh", affiliation: "NIT, Raipur" },
+  { name: "Prof. (Dr.) Narendra D. Londhe", affiliation: "NIT, Raipur" },
+  { name: "Dr. Binoy Kumar Karmakar", affiliation: "University of Calcutta" },
+  { name: "Dr. Tridibesh Nag", affiliation: "Vice Chair, IEEE Kolkata Section" },
+  { name: "Dr. Susanta Ray", affiliation: "Secretary, IEEE Kolkata Section" },
 ];
 
 const financeChairs: CommitteeMember[] = [
@@ -319,24 +245,23 @@ const financeChairs: CommitteeMember[] = [
   { name: "Dr. Prem Nath Suman", role: "Finance Chair", affiliation: "AJU, Jharkhand, India" },
 ];
 
-const industryChairs: CommitteeMember[] = [
-  { name: "Dr. Sachidananda Prasad", role: "Industry Chair", affiliation: "Sgurr Energy, Gujarat" },
-  { name: "Mr. Vinod Veeramachaneni", role: "Industry Chair", affiliation: "Think Mediator Inc., USA" },
-  { name: "Mr. Pradeep Kumar Srivastava", role: "Industry Chair", affiliation: "TATA Cummins, Jamshedpur" },
-];
-
 const publicationChairs: CommitteeMember[] = [
+  { name: "Dr. Sibarama Panigrahi", role: "Publication Chair", affiliation: "NIT, Rourkela" },
+  { name: "Dr. Rudranarayan Pradhan", role: "Publication Chair", affiliation: "OUTR, Bhubaneswar" },
   { name: "Dr. Gajendra Kant Mishra", role: "Publication Chair", affiliation: "BIT, Mesra" },
+  { name: "Dr. Nishant Kumar", role: "Publication Chair", affiliation: "B K Birla Institute, Pilani" },
   { name: "Prof. (Dr.) Sonia Riyat", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Shailesh Kumar", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Nidhi Dua", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
-  { name: "Dr. Md Irfan Ahmed", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Amit Prakash Sen", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Binod Kumar Choudhary", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Md Irfan Ahmed", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Nidhi Dua", role: "Publication Chair", affiliation: "AJU, Jharkhand" },
+  { name: "Dr. Jonaki Mukherjee", role: "Publication Chair", affiliation: "AJU, Jharkhand, India" },
 ];
 
 const womenInEngineeringChairs: CommitteeMember[] = [
+  { name: "Prof. (Dr.) Karabi Biswas", role: "WIE Chair", affiliation: "IIT, Kharagpur" },
   { name: "Prof. (Dr.) Susmita Das", role: "WIE Chair", affiliation: "NIT, Rourkela" },
+  { name: "Prof. (Dr.) Renu Sharma", role: "WIE Chair", affiliation: "SOA, Bhubaneswar" },
   { name: "Dr. Himani Saini", role: "WIE Chair", affiliation: "ISRO, Bangalore" },
   { name: "Dr. Kumari Namrata", role: "WIE Chair", affiliation: "NIT, Jamshedpur" },
   { name: "Dr. Susmita Kar", role: "WIE Chair", affiliation: "NIT, Rourkela" },
@@ -363,6 +288,7 @@ const webMediaChairs: CommitteeMember[] = [
 ];
 
 const localOrganizingCommittee: CommitteeMember[] = [
+  { name: "Dr. Shailendra Kumar", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Anup Kumar", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Chandraprabha Sahu", affiliation: "AJU, Jharkhand" },
   { name: "Dr. Dilip Kumar", affiliation: "AJU, Jharkhand" },
@@ -546,24 +472,22 @@ export default function CommitteePage() {
             </div>
           </div>
 
-          {/* General Chair Section */}
+          {/* Organizing Chairs Section */}
           <div className="mb-20">
-            <SectionHeading title="Organizing Chair" />
-            <div className="flex justify-center">
-              <div className="w-full max-w-xs">
-                <LeaderCard member={generalChairs[0]} />
-              </div>
+            <SectionHeading title="Organizing Chairs" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              {generalChairs.map((member) => (
+                <LeaderCard key={member.name} member={member} />
+              ))}
             </div>
           </div>
 
           {/* Co-Organizing Chairs Section */}
           <div className="mb-20">
             <SectionHeading title="Co-Organizing Chairs" />
-            <div className="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {coOrganizingChairs.map((member) => (
-                <div key={member.name} className="w-full max-w-xs">
-                  <LeaderCard member={member} />
-                </div>
+                <LeaderCard key={member.name} member={member} />
               ))}
             </div>
           </div>
@@ -586,6 +510,15 @@ export default function CommitteePage() {
             </div>
           )}
 
+          {/* Advisory Committees Section */}
+          <div className="mb-20">
+            <SectionHeading title="Advisory Committees" />
+            <div className="space-y-12">
+              <CommitteeTable title="International Advisory Committee" members={internationalAdvisoryCommittee} />
+              <CommitteeTable title="National Advisory Committee" members={nationalAdvisoryCommittee} />
+            </div>
+          </div>
+
           {/* Technical Programme Committee Section */}
           <div className="mb-20">
             <SectionHeading title="Technical Programme Committee" />
@@ -597,7 +530,6 @@ export default function CommitteePage() {
             <SectionHeading title="Other Conference Committees" />
             <div className="space-y-12">
               <CommitteeTable title="Finance Chairs" members={financeChairs} />
-              <CommitteeTable title="Industry Chairs" members={industryChairs} />
               <CommitteeTable title="Publication Chairs" members={publicationChairs} />
               <CommitteeTable title="Women in Engineering (WIE) Chairs" members={womenInEngineeringChairs} />
               <CommitteeTable title="Women in Engineering (WIE) Co-Chairs" members={womenInEngineeringCoChairs} />
