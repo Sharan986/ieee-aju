@@ -162,7 +162,14 @@ export default function CallForPapersPage() {
                     <li className="flex items-start gap-2">
                       <FaCheckCircle className="text-accent mt-0.5 shrink-0 text-xs" />
                       Papers must be written in English and formatted according to the{" "}
-                      <strong>IEEE conference template</strong>.
+                      <a
+                        href="https://www.ieee.org/conferences/publishing/templates"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline font-semibold"
+                      >
+                        IEEE conference template
+                      </a>.
                     </li>
                     <li className="flex items-start gap-2">
                       <FaCheckCircle className="text-accent mt-0.5 shrink-0 text-xs" />
@@ -198,6 +205,14 @@ export default function CallForPapersPage() {
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-primary-dark font-bold text-sm hover:bg-accent-light transition-colors"
                   >
                     <FaPaperPlane /> Submit Your Paper
+                  </a>
+                  <a
+                    href="https://www.ieee.org/conferences/publishing/templates"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-semibold text-sm hover:bg-primary hover:text-white transition-colors"
+                  >
+                    <FaFileAlt /> Paper Template
                   </a>
                   <Link
                     href="/key-dates"
