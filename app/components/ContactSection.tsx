@@ -46,8 +46,8 @@ export default function ContactSection() {
                       <a href="mailto:jhicon.ieee@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all font-medium text-primary">
                         jhicon.ieee@arkajainuniversity.ac.in
                       </a>
-                      <a href="mailto:dr.ashwini@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all font-medium text-primary">
-                        dr.ashwini@arkajainuniversity.ac.in
+                      <a href="mailto:dr.kasinath@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all font-medium text-primary">
+                        dr.kasinath@arkajainuniversity.ac.in
                       </a>
                       <a href="mailto:dr.aditya@arkajainuniversity.ac.in" className="hover:text-accent transition-colors break-all font-medium text-primary">
                         dr.aditya@arkajainuniversity.ac.in

@@ -189,12 +189,15 @@ export default function SponsorsPage() {
               Partner with JHICON-2027 and showcase your organization to a global audience
               of researchers, engineers, and innovators in the field of electrical engineering and computing.
             </p>
-            <a
-              href="mailto:jhicon.ieee@arkajainuniversity.ac.in,dr.ashwini@arkajainuniversity.ac.in,dr.aditya@arkajainuniversity.ac.in?subject=Sponsorship%20Inquiry%20-%20JHICON-2027"
-              className="inline-block px-8 py-3 rounded-lg bg-accent text-primary-dark font-bold text-sm hover:bg-accent-light transition-colors"
-            >
-              Contact Us for Sponsorship
-            </a>
+            <p className="text-base text-white/95 font-medium">
+              For sponsorship inquiries, please contact us at{" "}
+              <a
+                href="mailto:dr.aditya@arkajainuniversity.ac.in?subject=Sponsorship%20Inquiry%20-%20JHICON-2027"
+                className="text-accent hover:text-accent-light font-bold underline transition-colors"
+              >
+                dr.aditya@arkajainuniversity.ac.in
+              </a>
+            </p>
           </div>
         </div>
       </section>

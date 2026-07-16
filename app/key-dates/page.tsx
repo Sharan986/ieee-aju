@@ -116,10 +116,10 @@ export default function KeyDatesPage() {
               </a>
               ,{" "}
               <a
-                href="mailto:dr.ashwini@arkajainuniversity.ac.in"
+                href="mailto:dr.kasinath@arkajainuniversity.ac.in"
                 className="text-primary font-medium hover:text-accent transition-colors"
               >
-                dr.ashwini@arkajainuniversity.ac.in
+                dr.kasinath@arkajainuniversity.ac.in
               </a>
               , or{" "}
               <a

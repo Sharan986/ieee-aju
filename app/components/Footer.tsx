@@ -33,8 +33,8 @@ export default function Footer() {
                   <a href="mailto:jhicon.ieee@arkajainuniversity.ac.in" className="hover:text-accent transition-colors">
                     jhicon.ieee@arkajainuniversity.ac.in
                   </a>
-                  <a href="mailto:dr.ashwini@arkajainuniversity.ac.in" className="hover:text-accent transition-colors mt-1">
-                    dr.ashwini@arkajainuniversity.ac.in
+                  <a href="mailto:dr.kasinath@arkajainuniversity.ac.in" className="hover:text-accent transition-colors mt-1">
+                    dr.kasinath@arkajainuniversity.ac.in
                   </a>
                   <a href="mailto:dr.aditya@arkajainuniversity.ac.in" className="hover:text-accent transition-colors mt-1">
                     dr.aditya@arkajainuniversity.ac.in
