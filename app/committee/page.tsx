@@ -332,6 +332,33 @@ const tpcChairs: CommitteeMember[] = [
   },
 ];
 
+const internationalAdvisoryCommittee: CommitteeMember[] = [
+  { name: "Prof. (Dr.) Anurag K Srivastava", affiliation: "WVU, USA" },
+  { name: "Prof. (Dr.) Frede Blaabjerg", affiliation: "AU, Denmark" },
+  { name: "Dr. Shubham Kumar Sahu", affiliation: "AU, Denmark" },
+  { name: "Prof. (Dr.) Lalit Goel", affiliation: "NTU, Singapore" },
+  { name: "Prof. (Dr.) Tarlochan Sidhu", affiliation: "OTU, Canada" },
+  { name: "Prof. (Dr.) Samir Kouro", affiliation: "LIST, Luxembourg" },
+  { name: "Prof. (Dr.) Hamid Reza Shaker", affiliation: "UOS, Denmark" },
+  { name: "Prof. (Dr.) Muhammad Majid Gulzar", affiliation: "KFUPM, Saudi Arabia" },
+  { name: "Dr. Syed Muhammad Amrr", affiliation: "KFUPM, Saudi Arabia" },
+  { name: "Dr. Swatee Padhee", affiliation: "NCH, USA" },
+  { name: "Dr. Navid Bayati", affiliation: "UOS, Denmark" },
+];
+
+const nationalAdvisoryCommittee: CommitteeMember[] = [
+  { name: "Prof. (Dr.) Soumya Ranjan Mohanty", affiliation: "IIT, BHU" },
+  { name: "Dr. Ranjan Kumar Behere", affiliation: "IIT, Patna" },
+  { name: "Prof. (Dr.) Yogesh Vijay Hote", affiliation: "IIT, Roorkee" },
+  { name: "Prof. (Dr.) Partha Sharathi Mallick", affiliation: "VIT, Vellore" },
+  { name: "Prof. (Dr.) Subhojit Ghosh", affiliation: "NIT, Raipur" },
+  { name: "Prof. (Dr.) Narendra D. Londhe", affiliation: "NIT, Raipur" },
+  { name: "Dr. Binoy Kumar Karmakar", affiliation: "University of Calcutta" },
+  { name: "Dr. Tridibesh Nag", affiliation: "Vice Chair, IEEE Kolkata Section" },
+  { name: "Dr. Susanta Ray", affiliation: "Secretary, IEEE Kolkata Section" },
+];
+
+
 const financeChairs: CommitteeMember[] = [
   { name: "Dr. Ashwini Kumar", role: "Finance Chair", affiliation: "AJU, Jharkhand, India", image: "/committee/ashwini_kumar.jpg" },
   { name: "Dr. Prem Nath Suman", role: "Finance Chair", affiliation: "AJU, Jharkhand, India" },
