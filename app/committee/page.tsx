@@ -159,12 +159,6 @@ const generalChairs: CommitteeMember[] = [
     affiliation: "AJU, Jharkhand, India",
     image: "/committee/aditya_prasad_padhy.jpg",
   },
-  {
-    name: "Dr. Deepak Reddy Pullaguram",
-    role: "",
-    affiliation: "IIT, Kharagpur",
-    image: "/committee/deepak_reddy_pullaguram.png",
-  },
 ];
 
 const coOrganizingChairs: CommitteeMember[] = [
@@ -189,12 +183,6 @@ const coOrganizingChairs: CommitteeMember[] = [
 const steeringCommittee: CommitteeMember[] = [];
 
 const tpcChairs: CommitteeMember[] = [
-  {
-    name: "Dr. Deepak Reddy Pullaguram",
-    role: "Technical Programme Committee Chair",
-    affiliation: "IIT, Kharagpur",
-    image: "/committee/deepak_reddy_pullaguram.png",
-  },
   {
     name: "Dr. Paresh Kumar Nayak",
     role: "Technical Programme Committee Chair",
