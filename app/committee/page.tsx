@@ -304,6 +304,11 @@ const tpcChairs: CommitteeMember[] = [
     affiliation: "VIT, Bhopal",
   },
   {
+    name: "Dr. Shailesh Kumar",
+    role: "Technical Programme Committee Chair",
+    affiliation: "AJU, Jharkhand",
+  },
+  {
     name: "Dr. Gesu Thakur",
     role: "Technical Programme Committee Chair",
     affiliation: "COER University, Roorkee",
