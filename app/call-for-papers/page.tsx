@@ -107,6 +107,19 @@ export default function CallForPapersPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main content */}
             <div className="lg:col-span-2">
+              {/* Extension Banner */}
+              <div className="mb-8 bg-accent/15 border-2 border-accent rounded-xl p-4 sm:p-5 flex items-center gap-4 shadow-sm">
+                <span className="text-2xl sm:text-3xl shrink-0">📢</span>
+                <div>
+                  <h3 className="font-bold text-foreground text-base sm:text-lg">
+                    Paper Submission Deadline Extended
+                  </h3>
+                  <p className="text-sm text-gray-700 mt-0.5">
+                    The deadline for paper submission has been extended to <strong>October 30, 2026</strong>.
+                  </p>
+                </div>
+              </div>
+
               {/* Introduction */}
               <div className="mb-12">
                 <p className="text-gray-600 leading-relaxed">

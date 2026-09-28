@@ -15,13 +15,13 @@ const timeline = [
     status: "upcoming" as const,
   },
   {
-    date: "September 15, 2026",
-    title: "Paper Submission Deadline",
-    description: "Submit your full paper via the online submission system.",
+    date: "October 30, 2026",
+    title: "Paper Submission Deadline (Extended)",
+    description: "Submit your full paper via the online submission system (Extended from September 15, 2026).",
     status: "upcoming" as const,
   },
   {
-    date: "October 15, 2026",
+    date: "November 15, 2026",
     title: "Acceptance Notification",
     description: "Authors will be notified of the review decision.",
     status: "upcoming" as const,
@@ -60,6 +60,19 @@ export default function KeyDatesPage() {
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          {/* Extension Announcement Banner */}
+          <div className="mb-10 bg-accent/15 border-2 border-accent rounded-xl p-4 sm:p-5 flex items-center gap-4 shadow-sm">
+            <span className="text-2xl sm:text-3xl shrink-0">📢</span>
+            <div>
+              <h3 className="font-bold text-foreground text-base sm:text-lg">
+                Paper Submission Deadline Extended
+              </h3>
+              <p className="text-sm text-gray-700 mt-0.5">
+                The deadline for paper submission has been extended to <strong>October 30, 2026</strong>.
+              </p>
+            </div>
+          </div>
+
           <SectionHeading
             title="Conference Timeline"
             subtitle="Please note these important dates. All deadlines are at 11:59 PM AoE (Anywhere on Earth)."

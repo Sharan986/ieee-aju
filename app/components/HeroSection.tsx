@@ -21,10 +21,15 @@ export default function HeroSection() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
         <div className="text-center">
-          {/* IEEE Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-sm mb-6">
-            <span className="font-semibold text-accent">IEEE JHICON </span>
-            <span className="text-white/70">2027</span>
+          {/* IEEE Badge & Announcement */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-sm">
+              <span className="font-semibold text-accent">IEEE JHICON </span>
+              <span className="text-white/70">2027</span>
+            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/20 backdrop-blur border border-accent/40 text-xs sm:text-sm font-bold text-accent">
+              <span>📢 Paper Submission Extended to Oct 30, 2026</span>
+            </div>
           </div>
 
           <div className="max-w-5xl mx-auto px-4">
