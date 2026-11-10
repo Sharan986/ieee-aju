@@ -28,7 +28,7 @@ export default function HeroSection() {
               <span className="text-white/70">2027</span>
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/20 backdrop-blur border border-accent/40 text-xs sm:text-sm font-bold text-accent">
-              <span>📢 Paper Submission Extended to Oct 30, 2026</span>
+              <span>📢 Paper Submission Extended to End of November 2026</span>
             </div>
           </div>
 
