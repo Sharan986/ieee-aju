@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/committee", label: "Committee" },
   { href: "/call-for-papers", label: "Call for Papers" },
   { href: "/key-dates", label: "Key Dates" },
+  { href: "/camera-ready", label: "Camera-Ready Submission Guidelines" },
   { href: "/sponsors", label: "Sponsors" },
   { href: "/contact", label: "Contact" },
 ];
