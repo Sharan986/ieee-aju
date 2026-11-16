@@ -15,25 +15,25 @@ const timeline = [
     status: "upcoming" as const,
   },
   {
-    date: "October 30, 2026",
-    title: "Paper Submission Deadline (Extended)",
-    description: "Submit your full paper via the online submission system (Extended from September 15, 2026).",
+    date: "November 30, 2026 (Final Deadline)",
+    title: "Paper Submission Deadline",
+    description: "Submit your full paper via the online submission system by the final deadline.",
     status: "upcoming" as const,
   },
   {
-    date: "November 15, 2026",
+    date: "10th December, 2026",
     title: "Acceptance Notification",
     description: "Authors will be notified of the review decision.",
     status: "upcoming" as const,
   },
   {
-    date: "November 15, 2026",
+    date: "25th December 2026",
     title: "Camera-Ready Paper",
     description: "Submit the final version of your accepted paper with all revisions.",
     status: "upcoming" as const,
   },
   {
-    date: "December 15, 2026",
+    date: "20th December 2026",
     title: "Early Bird Registration",
     description: "Avail discounted registration rates before the deadline.",
     status: "upcoming" as const,
@@ -65,10 +65,10 @@ export default function KeyDatesPage() {
             <span className="text-2xl sm:text-3xl shrink-0">📢</span>
             <div>
               <h3 className="font-bold text-foreground text-base sm:text-lg">
-                Paper Submission Deadline Extended
+                Final Paper Submission Deadline
               </h3>
               <p className="text-sm text-gray-700 mt-0.5">
-                The deadline for paper submission has been extended to <strong>October 30, 2026</strong>.
+                The final deadline for paper submission is <strong>November 30, 2026</strong>.
               </p>
             </div>
           </div>

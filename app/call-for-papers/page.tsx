@@ -112,10 +112,10 @@ export default function CallForPapersPage() {
                 <span className="text-2xl sm:text-3xl shrink-0">📢</span>
                 <div>
                   <h3 className="font-bold text-foreground text-base sm:text-lg">
-                    Paper Submission Deadline Extended
+                    Final Paper Submission Deadline
                   </h3>
                   <p className="text-sm text-gray-700 mt-0.5">
-                    The deadline for paper submission has been extended to <strong>October 30, 2026</strong>.
+                    The final deadline for paper submission is <strong>November 30, 2026</strong>.
                   </p>
                 </div>
               </div>

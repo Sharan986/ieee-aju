@@ -2,10 +2,10 @@ import { FaCalendarCheck } from "react-icons/fa";
 
 const keyDates = [
   { label: "Paper Submission Opens", date: "June 15, 2026" },
-  { label: "Paper Submission Deadline", date: "October 30, 2026 (Extended)", highlight: true },
-  { label: "Acceptance Notification", date: "November 15, 2026" },
-  { label: "Camera-Ready Paper", date: "November 15, 2026" },
-  { label: "Early Bird Registration", date: "December 15, 2026" },
+  { label: "Paper Submission Deadline", date: "November 30, 2026 (Final Deadline)", highlight: true },
+  { label: "Acceptance Notification", date: "10th December, 2026" },
+  { label: "Camera-Ready Paper", date: "25th December 2026" },
+  { label: "Early Bird Registration", date: "20th December 2026" },
   { label: "Conference Dates", date: "February 2–3, 2027", highlight: true },
 ];
 
