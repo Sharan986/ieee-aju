@@ -22,6 +22,33 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-primary shadow-lg">
+      {pathname === "/" && (
+        <aside
+          aria-label="Fraud alert warning"
+          className="bg-red-600 text-white border-b border-red-700/80 shadow-xs"
+        >
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="text-base sm:text-lg shrink-0">🚨</span>
+              <p className="text-xs sm:text-sm font-medium leading-snug">
+                <strong className="font-extrabold uppercase tracking-wide bg-red-800/90 px-1.5 py-0.5 rounded text-[10px] sm:text-xs mr-1.5 inline-block">
+                  Fraud Alert
+                </strong>
+                <span>
+                  Warning against unauthorised JHICON-2027 website &amp; fake payment links.
+                </span>
+              </p>
+            </div>
+            <Link
+              href="/public-notice"
+              className="inline-flex items-center gap-1 font-bold text-xs sm:text-sm bg-white text-red-700 hover:bg-red-50 px-3 py-1 rounded-md transition-colors shrink-0 whitespace-nowrap"
+            >
+              <span>Read Full Notice</span>
+              <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </div>
+        </aside>
+      )}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}

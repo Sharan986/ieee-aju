@@ -6,8 +6,10 @@ const quickLinks = [
   { href: "/committee", label: "Committee" },
   { href: "/call-for-papers", label: "Call for Papers" },
   { href: "/key-dates", label: "Key Dates" },
+  { href: "/camera-ready", label: "Camera-Ready Guidelines" },
   { href: "/sponsors", label: "Sponsors" },
   { href: "/contact", label: "Contact" },
+  { href: "/public-notice", label: "Public Notice (Fraud Alert)" },
 ];
 
 export default function Footer() {
