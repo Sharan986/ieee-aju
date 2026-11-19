@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Important Notice: Fraud Alert | JHICON-2027",
+  title: "Important Notice: Fraud Alert | IEEE JHICON 2027",
   description:
     "Official warning against unauthorised JHICON-2027 website and fraudulent payment requests. Issued by the JHICON-2027 Organising Committee, ARKA JAIN University.",
 };

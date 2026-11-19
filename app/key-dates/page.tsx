@@ -3,7 +3,7 @@ import { FaCircle, FaCalendarAlt } from "react-icons/fa";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Key Dates | JHICON-2027",
+  title: "Key Dates | IEEE JHICON 2027",
   description: "Important dates and deadlines for JHICON-2027 — paper submission, acceptance notification, registration, and conference dates.",
 };
 

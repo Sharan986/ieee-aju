@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FaCheckCircle, FaExternalLinkAlt, FaFileAlt } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Camera-Ready Submission Guidelines | JHICON-2027",
+  title: "Camera-Ready Submission Guidelines | IEEE JHICON 2027",
   description:
     "Camera-ready manuscript preparation, submission, copyright, and author checklist guidelines for JHICON-2027.",
 };

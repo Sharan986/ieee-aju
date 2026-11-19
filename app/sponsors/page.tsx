@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { FaCheck, FaTimes } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Sponsors | JHICON-2027",
+  title: "Sponsors | IEEE JHICON 2027",
   description: "Sponsors, technical co-sponsors, and knowledge partners of JHICON-2027.",
 };
 

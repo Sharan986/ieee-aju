@@ -5,7 +5,7 @@ import { QRCodeSVG } from "qrcode.react";
 import SectionHeading from "../components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Register | JHICON-2027",
+  title: "Register | IEEE JHICON 2027",
   description: "Register for the 1st Jharkhand International Conference on Electrical Engineering, Signal Processing, and Advanced Computing Technologies for Sustainable Development (JHICON-2027).",
 };
 

@@ -2,7 +2,7 @@ import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | JHICON-2027",
+  title: "Contact Us | IEEE JHICON 2027",
   description: "Get in touch with the organizing committee of the 1st Jharkhand International Conference (JHICON-2027) at Arka Jain University.",
 };
 

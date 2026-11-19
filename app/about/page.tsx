@@ -3,7 +3,7 @@ import KeyDatesCard from "../components/KeyDatesCard";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | JHICON-2027",
+  title: "About | IEEE JHICON 2027",
   description: "Learn about the 1st Jharkhand International Conference on Electrical Engineering, Signal Processing, and Advanced Computing Technologies for Sustainable Development (JHICON-2027) and Arka Jain University.",
 };
 

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Committee | JHICON-2027",
+  title: "Committee | IEEE JHICON 2027",
   description: "Organizing committee details for JHICON-2027 at AJU, Jharkhand, India.",
 };
 

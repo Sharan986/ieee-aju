@@ -5,7 +5,7 @@ import { FaCheckCircle, FaFileAlt, FaPaperPlane } from "react-icons/fa";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Call for Papers | JHICON-2027",
+  title: "Call for Papers | IEEE JHICON 2027",
   description: "Submit your research paper to JHICON-2027. Conference tracks, submission guidelines, and paper format.",
 };
 
